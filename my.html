@@ -1,0 +1,272 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>个人中心</title>
+		<!--框架css引入开始-->
+		<link rel="stylesheet" href="https://unpkg.com/element-ui/lib/theme-chalk/index.css">
+		<!--框架css引入结束-->
+		<!--普通css文件引入开始-->
+		<link rel="stylesheet" href="css/common.css" type="text/css"/>
+		<link href="css/goods-lease.css" type="text/css" rel="stylesheet"/>
+		<link href="css/base.css" type="text/css" rel="stylesheet"/>
+		<link rel="stylesheet" href="css/sell.css" type="text/css"/>
+		<link href="css/my.css" type="text/css" rel="stylesheet"/>
+		<!--普通css文件引入结束-->				
+		
+		<!--框架js引入开始-->
+		<script type="text/javascript" src="js/jquery-1.11.2.min.js" ></script>
+		<script src="https://unpkg.com/vue/dist/vue.js"></script>
+  		<script src="https://unpkg.com/element-ui/lib/index.js"></script>
+		<!--框架js引入结束-->
+		<!--普通js引入开始-->	
+		<script type="text/javascript" src="js/common.js" ></script>
+		<script type="text/javascript" src="js/special.js" ></script>
+		<!--普通js引入结束-->
+	</head>
+	<body>
+		<!--头部导航开始-->
+		<div class="header-con">
+			<div class="header-nav f-l p-r">
+				<span>校园闲智</span>
+				<!--<input type="text" class="search-input"/>-->
+				<!--<i></i>-->
+				<!--<img class="am-icon-clear clearIcon" src="img/close.png" />--> 
+				<el-input class="search-input"
+					placeholder="请输入内容"
+					v-model="input10"
+					clearable>
+				</el-input>
+			</div>
+			<div class="nav f-r">
+				<ul>
+					<li><a href="index.html">首页</a></li>
+					<li><a href="message.html">消息</a></li>
+					<li><a href="index.html#p1" class="current">发布</a></li>
+					<li><a href="order.html">订单</a></li>
+					<li><a href="">退出</a></li>
+				</ul>
+			</div>
+		</div>	
+		<!--头部导航结束-->
+		<!--中间开始-->
+		<div class="main">
+			<div class="bar p-r">
+				<a href="">
+					<span>个人中心</span>
+				</a>
+			</div>
+			<div class="left">
+				<div class="menu">
+					<div class="menu-spe">
+						<p class="current"><a href="javascript:;">个人中心</a></p>
+						<p><a href="javascript:;">发布</a></p>
+						<p><a href="javascript:;">收藏</a></p>
+						<p><a href="javascript:;">收到的评价</a></p>
+						<p><a href="javascript:;">发出的评价</a></p>
+					</div>
+				</div>
+			</div>
+			<!--左边部分结束-->
+			
+			<!--右边部分开始-->
+			<div class="right">
+				<div class="right-content tab-show">
+					<div class="f-left f-l">
+						<a><img src="img/headPortrait001.jpg"/></a>
+						<p>更换头像</p>
+					</div>
+					<div class="f-right f-l">
+						<!--中间栏开始-->
+						<div class="f-right-left f-l">
+							<!--星级-->	
+							<div class="start">
+								<a>XIAO MING</a>
+			   					<ul>
+			   						<li class="item-star"></li>
+			   						<li class="item-star"></li>
+			   						<li class="item-star"></li>
+			   						<li class="item-star"></li>
+			   					</ul>
+			   				</div>
+			   				<!--星级结束-->
+			   				<div class="set-personal-data com-form">
+								<p class="p-r spe-img1">
+									<label>登录名：</label>
+									<input type="text" placeholder=""/> 
+								</p>
+								<p class="p-r">
+									<label>手机号：</label>
+									<input type="text" placeholder="" pattern="^(13[0-9]|14[5|7]|15[0|1|2|3|5|6|7|8|9]|18[0|1|2|3|5|6|7|8|9])\d{8}$"/> 
+								</p>
+								<p class="p-r">
+									<label>昵称：</label>
+									<input type="text" placeholder=""/> 
+								</p>
+							</div>
+							<div class="set-privacy">
+								<p>隐私设置</p>
+								<div name="fav_video" class="setting-privacy-item name">
+									<span class="setting-privacy">向好友公开真实姓名</span>
+									
+									<el-switch
+										v-model="value3">
+									</el-switch>
+									
+								</div>
+								<div name="verification" class="setting-privacy-item identify">
+									<span class="setting-privacy">加我为好友时需要验证</span>
+									<!--<div class="be-switch-container setting-privacy-switcher p-r">
+										<input type="checkbox" class="be-switch-input">
+										<div class="be-switch">
+											<i class="be-switch-cursor"></i>
+										</div>
+										<div class="be-switch-label">
+											<span>验证</span>
+										</div>
+									</div>-->
+									<el-switch
+										v-model="value4">
+									</el-switch>
+								</div>
+							</div>
+							<div class="set-real-name com-form">
+								<p>实名认证</p>
+								<p class="p-r">
+									<label>真实姓名：</label>
+									<input type="text" placeholder=""/> 
+								</p>
+								<p class="p-r">
+									<label>身份证号：</label>
+									<input type="text" placeholder="" pattern="^([0-9]){7,18}(x|X)?$"/> 
+								</p>
+								<p class="p-r">
+									<label>在读大学：</label>
+									<input type="text" placeholder=""/> 
+								</p>
+							</div>
+						</div>
+						<!--中间栏结束-->					
+						<!--右栏开始-->
+						<div class="f-right-right f-l com-form">
+							<p class="p-r spe-img2">
+								<label>收货人：</label>
+								<input type="text" placeholder=""/> 
+							</p>
+							<p class="p-r">
+								<label>手机号：</label>
+								<input type="text" placeholder="" pattern="^(13[0-9]|14[5|7]|15[0|1|2|3|5|6|7|8|9]|18[0|1|2|3|5|6|7|8|9])\d{8}$"/> 
+							</p>
+							<p class="p-r">
+								<label>邮编：</label>
+								<input type="text" placeholder="238254"/> 
+							</p>
+							<p class="p-r">
+								<label>详细地址：</label>
+								<input type="text" placeholder=""/> 
+							</p>
+						</div>
+						<!--右栏结束-->
+						<!--中右栏结束-->
+						<a class="save-change" href="">保存修改</a>
+					</div>
+					
+				</div>
+				<!--发布中心tab1结束-->
+				<div class="right-content ">
+					<div class="content-release">
+						<div class="f-l pic-box">
+							<a href=""><img src="img/goods002.jpg" alt="吉他" /></a>
+							<span>出售吉他</span>
+						</div>
+						<div class="f-l pic-box">
+							<a href=""><img src="img/goods005.jpg" alt="U盘" /></a>
+							<span>U盘 寻物启事</span>
+						</div>
+						<div class="f-l pic-box">
+							<a href=""><img src="img/goods003.jpg" alt="绘图本" /></a>
+							<span>出租绘图本</span>
+						</div>
+						<div class="f-l pic-box">
+							<a href=""><img src="img/goods007.jpg" alt="微积分上下册" /></a>
+							<span>出租微积分上下册</span>
+						</div>
+						<div class="f-l pic-box">
+							<a href=""><img src="img/goods08.jpg" alt="微积分辅导书"/></a>
+							<span>出租微积分辅导书</span>
+						</div>
+					</div>
+				</div>
+				<!--发布tab2结束-->
+				<div class="right-content ">
+					<div class="content-collection">
+						<div class="f-l pic-box">
+							<a href=""><img src="img/goods009.jpg" alt="图书" /></a>
+							<span>出售 闲置图书</span>
+							<span>来自 <a href="https://www.nju.edu.cn/">南京·南京大学</a></span>
+						</div>
+						<div class="f-l pic-box">
+							<a href=""><img src="img/goods002.jpg" alt="吉他" /></a>
+							<span>出售 吉他</span>
+							<span>来自 <a href="http://www.zju.edu.cn/">浙江·浙江大学</a></span>
+						</div>
+					</div>
+				</div>
+				<!--收藏tab3结束-->
+				<div class="right-content ">
+					<div class="right-con">		
+							<div class="order p-r">
+								<div class="oder-number">
+									<a href="javascript:;">
+										<img src="img/headPortrait002.jpg" alt="头像"/>
+									</a>
+									<div>
+										<p>小文&nbsp;&nbsp;2018年6月3日</p>
+										<p>评价您的订单 <span>出售吉他：很好的卖家</span></p>
+									</div>
+								</div>
+							</div>
+					</div>
+					<div class="right-con">		
+							<div class="order p-r">
+								<div class="oder-number">
+									<a href="javascript:;">
+										<img src="img/headPortrait003.jpg" alt="头像"/>
+									</a>
+									<div>
+										<p>小张&nbsp;&nbsp;2018年6月1日</p>
+										<p>评价您的订单 <span>出售图绘本：很好的卖家</span></p>
+									</div>
+								</div>
+							</div>
+					</div>
+				</div>
+				<!--收到的评价tab4结束-->
+				<div class="right-content ">
+					<div class="right-con">		
+							<div class="order p-r">
+								<div class="oder-number">
+									<a href="javascript:;">
+										<img src="img/headPortrait002.jpg" alt="头像"/>
+									</a>
+									<div>
+										<p>小文&nbsp;&nbsp;2018年6月3日</p>
+										<p>评价您的订单 <span>出售吉他：很好的卖家</span></p>
+									</div>
+								</div>
+							</div>
+					</div>
+				</div>
+				<!--发出的评论tab5结束-->
+			</div>
+			<!--右边部分结束-->
+		</div>
+		<!--中间部分结束-->
+		<!--脚部开始-->
+		<div class="footer  clearfix">
+			<p><span>校园闲置</span>Copyright © 2018 校园闲智网站 All Rights Reserved . 技术支持</p>
+		</div>
+		<!--脚部结束-->
+		
+	</body>
+</html>

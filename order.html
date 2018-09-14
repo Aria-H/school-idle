@@ -1,0 +1,339 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>order</title>
+		<!--普通css文件引入开始-->
+		<link href="css/base.css" type="text/css" rel="stylesheet"/>
+		<link rel="stylesheet" href="css/common.css" />
+		<link href="css/order.css" type="text/css" rel="stylesheet"/>
+		<!--普通css文件引入结束-->				
+		
+		<!--框架js引入开始-->
+		<script type="text/javascript" src="js/jquery-1.11.2.min.js" ></script>
+		<!--框架js引入结束-->
+		<!--普通js引入开始-->
+		<script type="text/javascript" src="js/common.js" ></script>
+		<script type="text/javascript" src="js/tab.js" ></script>
+		<!--普通js引入结束-->
+	</head>
+	<body>
+		<div class="top-bar-con">
+			<div class="top-bar">
+				<div class="user-info f-l">
+					<!--<div class="user-login-before">
+						<a href="javascript:;">登录</a>
+						<span>|</span>
+						<a href="javascript:;">注册</a>
+					</div>-->
+					<div class="user-login-after"> <!-- 通过js给动态行间样式控制显示 -->
+						<em>XIAO MING</em>
+						<div class="drop-down"></div>
+						<a>消息</a>
+						<span class="drop-down"></span>
+					</div>
+				</div>
+				<div class="welcome f-r">您好，欢迎来到校园闲智！</div>		
+			</div>
+		</div>
+		<!--顶部工具栏结束-->
+		<!--头部导航-->
+		<div class="header-con clearfix">
+			<div class="header">
+				<div class="logo f-l">
+					<a><img src="img/Logo.png" alt="logo" title="logo"/></a>
+				</div>
+				<div class="nav f-l">
+					<ul>
+						<li><a href="index.html">首页</a></li>
+						<li><a href="message.html">消息</a></li>
+						<li><a href="index.html#p1">发布</a></li>
+						<li><a href="order.html" class="active">订单</a></li>
+						<li><a href="my.html">个人中心</a></li>
+					</ul>
+				</div>
+			</div>
+		</div>
+		<!--头部导航结束-->
+		<!--中间开始-->
+		<div class="main">
+				<div class="left clearfix">
+					<div class="portrait">
+						<a href="javascript:;">
+							<img src="img/headPortrait001.jpg" alt="欧美人物头像" />
+						</a>
+						<p>XIAO MING</p>
+					</div>
+					<div class="d-flex item-tiling">
+		        		<dl class="text-center" title="234">
+		            		<dt>关注</dt>
+		            		<dd><span class="count" >162</span></dd>
+		        		</dl>
+		        		<dl class="text-center" title="89">
+		           			<dt>粉丝</dt>
+		            		<dd><span class="count" id="fan">234</span></dd>
+		        		</dl>
+		        		<dl class="text-center" title="9624">
+		            		<dt>发布</dt>
+		            		<dd><span class="count">89</span></dd>
+		        		</dl>
+	   				</div>
+	   				<!--星级-->
+	   				<div class="start">
+	   					<ul>
+	   						<li class="item-star"></li>
+	   						<li class="item-star"></li>
+	   						<li class="item-star"></li>
+	   						<li class="item-star"></li>
+	   					</ul>
+	   					<a>点赞</a>
+	   				</div>
+	   				<!--星级结束-->
+					<div class="menu">
+						<div class="menu-spe">
+							<p class="current"><a href="javascript:;">我想租借</a></p>						
+							<p><a href="javascript:;">我有闲置</a></p>
+							<p><a href="javascript:;">I NEED HELP</a></p>
+							<p><a href="javascript:;">I CAN HELP</a></p>
+							<p><a href="javascript:;">失物招领 寻物启事</a></p>
+							<p><a href="javascript:;">找人找车找组织</a></p>
+						</div>
+					</div>
+				</div>
+				<div class="right">
+					
+					<!--我想租借-->
+					<div class="order-message right-content tab-show">
+						<p><span>我的发布</span></p>
+						<div class="right-con">		
+							<div class="order p-r">
+								<div class="oder-number">
+									<a href="javascript:;">
+										<img src="img/headPortrait006.jpg" alt="头像"/>
+									</a>
+									<div>
+										<h3>出售吉他</h3>
+										<span>2018-06-01 10:23:28</span>
+										<span>查看交易进度</span>
+									</div>
+								</div>
+								<a href="contract.html" class="prograss">合同详情</a>
+							</div>
+						</div>
+						<!--展开更多消息-->
+						<div style="display: none;" class="panel">
+							<div class="right-con">
+							    <div class="order p-r ">
+									<div class="oder-number">
+										<a href="javascript:;">
+											<img src="img/headPortrait002.jpg" alt="头像"/>
+										</a>
+										<div>
+											<h3>出售吉他</h3>
+											<span>2018-06-01 10:23:28</span>
+											<span>查看交易进度</span>
+										</div>
+									</div>	
+									<a href="contract.html" class="prograss">合同详情</a>
+								</div>
+							</div>
+							<div class="right-con">
+								<div class="order p-r ">
+									<div class="oder-number">
+										<a href="contract.html">
+											<img src="img/headPortrait003.jpg" alt="头像"/>
+										</a>
+										<div>
+											<h3>出售吉他</h3>
+											<span>2018-06-01 10:23:28</span>
+											<span>查看交易进度</span>
+										</div>
+									</div>	
+									<a href="contract.html" class="prograss">合同详情</a>
+								</div> 	
+							</div>
+						</div>
+						<p class="slide"><a href="javascript:;" class="btn-slide">展开更多消息</a></p> 	
+						<!--展开更多消息结束-->
+					</div>					
+					<!--我想租借结束--> 
+					<!--我有闲置-->
+					<div class="order-message right-content">
+						<p><span>我的发布</span></p>
+						<div class="right-con">
+								<div class="order p-r">
+									<div class="oder-number">
+										<a href="javascript:;">
+											<img src="img/headPortrait003.jpg" alt="头像"/>
+										</a>
+										<div>
+											<h3>出售吉他</h3>
+											<span>2018-06-01 10:23:28</span>
+											<span>查看交易进度</span>
+										</div>
+									</div>
+									<a href="contract.html" class="prograss">合同详情</a>
+								</div>
+								<div class="order p-r">
+									<div class="oder-number">
+										<a href="javascript:;">
+											<img src="img/headPortrait003.jpg" alt="头像"/>
+										</a>
+										<div>
+											<h3>出售吉他</h3>
+											<span>2018-06-01 10:23:28</span>
+											<span>查看交易进度</span>
+										</div>
+									</div>
+									<a href="contract.html" class="prograss">合同详情</a>
+								</div>
+							</div>
+							<!--展开更多消息-->
+							<div style="display: none;" class="panel"> 
+								<div class="right-con">
+								    <div class="order p-r ">
+										<div class="oder-number">
+											<a href="javascript:;">
+												<img src="img/headPortrait005.jpg" alt="头像"/>
+											</a>
+											<div>
+												<h3>出售吉他</h3>
+												<span>2018-06-01 10:23:28</span>
+												<span>查看交易进度</span>
+											</div>
+										</div>	
+										<a href="contract.html" class="prograss">合同详情</a>
+									</div>
+								</div>
+								<div class="right-con">
+									<div class="order p-r ">
+										<div class="oder-number">
+											<a href="javascript:;">
+												<img src="img/headPortrait003.jpg" alt="头像"/>
+											</a>
+											<div>
+												<h3>出售吉他</h3>
+												<span>2018-06-01 10:23:28</span>
+												<span>查看交易进度</span>
+											</div>
+										</div>	
+										<a href="contract.html" class="prograss">合同详情</a>
+									</div> 	
+								</div>
+							</div>
+							<p class="slide"><a href="javascript:;" class="btn-slide active">展开更多消息</a></p> 	
+							<!--展开更多消息结束-->
+					</div>
+					<!--我有闲置结束-->
+					<!--I NEED HELP-->
+					<div class="private-letter right-content">
+						<div class="right-con p-r">
+							<div class="private-spe">
+								<div class="f-l">
+									<img src="img/cartoon.png" alt="思考图标"/>
+								</div>
+								<div class="f-l">
+									<p>怎么还没<span>私信</span>我，大家都去火星了？</p>
+									<img src="img/descriptionBox.png" alt="校园闲智-大学生的交易平台"/>
+								</div>
+							</div>
+						</div>
+					</div>
+					<!--I NEED HELP结束-->
+					<!--I CAN HELP-->
+					<div class="private-letter right-content">
+						<div class="right-con p-r">
+							<div class="private-spe">
+								<div class="f-l">
+									<img src="img/cartoon.png" alt="思考图标"/>
+								</div>
+								<div class="f-l">
+									<p>怎么还没<span>私信</span>我，大家都去火星了？</p>
+									<img src="img/descriptionBox.png" alt="校园闲智-大学生的交易平台"/>
+								</div>
+							</div>
+						</div>
+					</div>
+					<!--I CAN HELP结束-->
+					<!--失物招领 寻物启事-->
+					<div class="order-message right-content ">
+						<p><span>我的发布</span></p>
+						<div class="right-con">		
+							<div class="order p-r">
+								<div class="oder-number">
+									<a href="javascript:;">
+										<img src="img/mainPic04.png" alt="头像"/>
+									</a>
+									<div>
+										<h3>出售吉他</h3>
+										<span>2018-06-01 10:23:28</span>
+										<span>查看交易进度</span>
+									</div>
+								</div>
+								<a href="contract.html" class="prograss">合同详情</a>
+							</div>
+						</div>
+							<!--展开更多消息-->
+							<div style="display: none;" class="panel"> 
+								<div class="right-con">
+								    <div class="order p-r ">
+										<div class="oder-number">
+											<a href="javascript:;">
+												<img src="img/headPortrait002.jpg" alt="头像"/>
+											</a>
+											<div>
+												<h3>出售吉他</h3>
+												<span>2018-06-01 10:23:28</span>
+												<span>查看交易进度</span>
+											</div>
+										</div>	
+										<a href="contract.html" class="prograss">合同详情</a>
+									</div>
+								</div>
+								<div class="right-con">
+									<div class="order p-r ">
+										<div class="oder-number">
+											<a href="javascript:;">
+												<img src="img/headPortrait003.jpg" alt="头像"/>
+											</a>
+											<div>
+												<h3>出售吉他</h3>
+												<span>2018-06-01 10:23:28</span>
+												<span>查看交易进度</span>
+											</div>
+										</div>	
+										<a href="contract.html" class="prograss">合同详情</a>
+									</div>
+								</div>
+							</div>
+							<p class="slide"><a href="javascript:;" class="btn-slide active">展开更多消息</a></p> 	
+							<!--展开更多消息结束-->
+					</div>
+					<!--失物招领 寻物启事结束-->
+					<!--找人找车找组织-->
+					<div class="private-letter right-content">
+						<div class="right-con p-r">
+							<div class="private-spe">
+								<div class="f-l">
+									<img src="img/cartoon.png" alt="思考图标"/>
+								</div>
+								<div class="f-l">
+									<p>怎么还没<span>私信</span>我，大家都去火星了？</p>
+									<img src="img/descriptionBox.png" alt="校园闲智-大学生的交易平台"/>
+								</div>
+							</div>
+						</div>
+					</div>
+					<!--找人找车找组织结束-->
+				</div>
+				<!--右边结束-->
+				
+		</div>
+		<!--中间结束-->
+		<!--脚部开始-->
+		<div class="footer  clearfix">
+			<p><span>校园闲置</span>Copyright © 2018 校园闲智网站 All Rights Reserved . 技术支持</p>
+		</div>
+		<!--脚部结束-->
+	</body>
+</html>

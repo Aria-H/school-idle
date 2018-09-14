@@ -1,0 +1,123 @@
+.content{
+	width: 100%;
+	position: relative;
+	margin-top: 0;
+}
+.content .goods-menu{
+	background-color: rgba(197,204,222,.6);
+	margin-top: -88px;
+	
+}
+.goods-menu ul{
+	width: 100%;
+	height: 85px;
+	line-height: 85px;
+    text-align: center;
+	
+}
+.goods-menu li{
+	position: relative;
+	display: inline-block;
+	width: 58px;
+	height: 58px;
+	vertical-align: middle;
+}
+.goods-menu li:not(:first-child){
+	margin-left: 26%;
+}
+.goods-menu li:hover::before{
+	content: '';
+	position: absolute;
+	top: 115%;
+	right: 34%;
+	width:0;
+    height:0;
+    border-width:10px;
+    border-style:solid;
+    border-color:#c6cddf transparent transparent transparent;
+}
+.current1::before{
+	content: '';
+	position: absolute;
+	top: 120%;
+	right: 34%;
+	width:0;
+    height:0;
+    border-width:10px;
+    border-style:solid;
+    border-color:#c6cddf transparent transparent transparent;
+}
+.main-con{
+	width: 88%;
+	margin: 0 auto;
+	margin-top: 25px;
+}
+.item-content .box{
+	width: 44%;
+	background-color:#fefeff;
+	padding: 15px 15px 15px 20px;
+	border: 1.5px solid #909bbd;
+	border-radius: 15px;
+	transition: all .25s ease;
+	margin: 0 6% 5% 0;
+}
+.item-content .box:hover{
+	box-shadow: 0 0 20px #909bbd;
+}
+
+.box a{
+	display: inline-block;
+	
+}
+.box .left a:first-child{
+	padding-right: 15px;
+}
+.box .left a p:first-child,.box .left a p span{
+	color: #a5a5a6;
+	font: bold 14px "Adobe 黑体 str" ;
+}
+.box .left a p:first-child span{
+	display: inline-block;
+	padding-left: 15px;
+}
+.box .left a span{
+	display: inline-block;
+	color: #020100;
+	margin-bottom: 6px;
+	font: bold 13px "Adobe 黑体 str";
+}
+.box .right{
+	text-align: right;
+}
+.box .right p{
+	color: #2a5caa;
+	font: bold 14px "Adobe 黑体 str" ;
+	padding-top: 5px;
+	padding-bottom: 5px;
+}
+.right .school{
+	display: inline-block;
+	width: 15px;
+    height: 28px;
+    background: url(../img/mainSprites.png) no-repeat -111px -70px;
+    vertical-align: middle;
+    padding-right: 18px;
+}
+
+
+
+
+
+
+
+/*menu切换*/
+.main-con>div{
+	display: none;
+}
+.main-con .tab-show{
+	display: block;
+}
+/*menu切换结束*/
+
+
+

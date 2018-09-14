@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>发布-物品租借</title>
+		<!--框架css引入开始-->
+		<link rel="stylesheet" href="https://unpkg.com/element-ui/lib/theme-chalk/index.css">
+		<!--框架css引入结束-->
+		
+		<!--普通css文件引入开始-->
+		<link href="css/base.css" type="text/css" rel="stylesheet"/>
+		<link rel="stylesheet" href="css/common.css" />
+		<link href="css/goods-lease.css" type="text/css" rel="stylesheet"/>
+		<!--<link rel="stylesheet" href="http://cache.amap.com/lbs/static/main.css?v=1.0" />-->
+		<!--普通css文件引入结束-->		
+		
+		<!--框架js引入开始-->
+		<script type="text/javascript" src="js/jquery-1.11.2.min.js" ></script>
+		<script src="https://unpkg.com/vue/dist/vue.js"></script>
+  		<script src="https://unpkg.com/element-ui/lib/index.js"></script>
+  		
+		<!--框架js引入结束-->
+		<!--普通js引入开始-->
+		<script type="text/javascript" src="js/common.js" ></script>
+		<script type="text/javascript" src="js/special.js" ></script>
+		<!--普通js引入结束-->
+	</head>
+	<body>
+		<!--头部导航开始-->
+		<div class="header-con">
+			<div class="header-nav f-l p-r">
+				<span>校园闲智</span>
+				<!--<input type="text"/>
+				<i></i>-->
+				<el-input class="search-input"
+					placeholder="请输入内容"
+					v-model="input10"
+					clearable>
+				</el-input>
+			</div>
+			<div class="nav f-r">
+				<ul>
+					<li><a href="index.html">首页</a></li>
+					<li><a href="message.html">消息</a></li>
+					<li><a href="order.html" class="current">订单消息</a></li>
+					<li><a href="my.html">个人中心</a></li>
+					<li><a href="">退出</a></li>
+				</ul>
+			</div>
+		</div>
+		<!--头部导航结束-->
+		<!--banner开始-->
+		<div class="banner">
+			<img src="img/releasePic001.jpg"/>
+		</div>
+		<!--banner结束-->
+		<!--中间内容开始-->
+		<div class="content">
+			<div class="portion-div">
+				<div class="describe">
+				 <p><label>标题：</label>
+					<input type="text"/>
+					<label>名称：</label>
+					<input type="text"/>
+					<label>购入时间：</label>
+					<input type="date" class="buy-time"/></p>
+				 <p><label>品牌：</label>
+					<input type="text"/>
+					<label>型号：</label>
+					<input type="text"/>
+					<label>颜色：</label>
+					<input type="text"/><p>
+				</div>
+				<div class="detailed">
+					<p>详细内容：</p>
+					<div class="add">
+						<div>
+							<input type="file" />
+							<img src="img/sprite/003.png" alt="添加" title="添加图片"/>	
+						</div>
+						<span>添加图片</span>
+					</div>
+					<div class="add">
+						<div>
+							<input type="file" />	
+							<img src="img/sprite/004.png" alt="视频" title="添加视频"/>
+						</div>
+						<span>添加视频</span>
+					</div>
+					<p class="location clearfix">
+						<a href="https://map.baidu.com/"><i></i></a>
+						<span>你在哪里？</span>
+					</p>
+				</div>
+			</div>
+			<!--上半部portion结束-->
+			<div class="portion-div">
+				<div class="detailed">
+					<div class="one-level f-l">
+						<div><img src="img/sprite/005.png"/><span>价格：</span></div>
+						<div><img src="img/sprite/006.png"/><span>期限：</span></div>
+					</div>
+					<div class="two-level f-l">
+						<dl>
+							<span>
+								<a>
+									<input type ="checkbox" name ="false">
+									<b></b>
+								</a>
+								<label for="checkbox_a1">定价：</label>
+							</span>
+							<span>
+								<a>
+									<input type ="checkbox"  name ="false" >
+									<b></b>
+								</a>
+								<label for="checkbox_a2">拍卖：</label>
+							</span>
+							<span>
+								<a>
+									<input type ="checkbox"  name ="false" >
+									<b></b>
+								</a>
+								<label for="checkbox_a3">不定价：</label>
+							</span>
+						</dl>
+						<dl>
+							<span>
+								<a>
+									<input type ="checkbox" name ="false">
+									<b></b>
+								</a>
+								<label for="checkbox_a4">有限期：</label>
+							</span>
+							<dt>
+								<span>
+									<a>
+										<input type ="checkbox"  name ="false">
+										<b></b>
+									</a>
+									<label for="checkbox_a5">卖家定：</label>	
+								</span>
+								<span style="display: block;padding-left: 7rem;">
+									<a>
+										<input type ="checkbox" name ="false" >
+										<b></b>
+									</a>
+									<label for="checkbox_a6">协商后定：</label>
+								</span>
+								<span style="display: block;padding-left: 7rem;">
+									<a>
+										<input type ="checkbox" name ="false" >
+										<b></b>
+									</a>						
+									<label for="checkbox_a7">一次性服务：</label>
+								</span>
+							</dt>					
+							<a>
+								<input type ="checkbox" name ="false" >
+								<b></b>
+							</a>
+							<label for="checkbox_a8">无限期（永久性）</label>	
+							
+						</dl>					
+					</div>
+				</div>
+			</div>
+			<!--下半部portion结束-->
+			
+			<!--发布按钮-->
+			<p class="release-btn">
+				<el-button type="text" @click="dialogVisible = true" class="elspan">发布</el-button>
+				<el-dialog
+				  title="提示"
+				  :visible.sync="dialogVisible"
+				  width="30%"
+				  :before-close="handleClose">
+				  <span>发布成功!</span>
+				  <span slot="footer" class="dialog-footer">
+				    <el-button @click="dialogVisible = false">取消</el-button>
+				    <el-button type="primary" @click="dialogVisible = false">确 定</el-button>
+				  </span>
+				</el-dialog>
+			</p>
+		</div>
+		<!--中间内容结束-->
+		
+	</body>
+</html>

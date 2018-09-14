@@ -1,0 +1,368 @@
+.main,.spemain{
+	width: 100%;
+	height: auto;
+	font-family: "Adobe 黑体 Std";
+}
+.main .bar,.spemain .bar{
+	height: 70px;
+	background-color: #2b5cab;
+}
+.bar a{
+	display: inline-block;
+    /* float: right; */
+    font: bold 22px/70px "Arial","宋体";
+    position: absolute;
+    right: 8%;
+}
+/*左半边开始*/
+.main .left,.spemain .left{
+	float: left;
+	width: 20%;
+	height: 684px;
+	margin: 0 auto;
+	background-color: #2b5cab;
+}
+.left .menu{
+	padding-top: 95px;
+}
+.left p{
+	text-align: center;
+	padding: 18px 18px 18px 0;
+	line-height: 20px;
+	background: url(../img/sprite/pullRight.png) no-repeat right center;
+	background-position-x: 72%;
+	transition: all .15s;
+	-webkit-animation: zoomIn .45s .25s cubic-bezier(0, 0, 0.13, 1.37) both;
+	animation: zoomIn .45s .25s cubic-bezier(0, 0, 0.13, 1.37) both;
+}
+.left p:nth-child(2){
+	-webkit-animation-delay: .35s;
+	animation-delay: .35s;
+}
+.left p:nth-child(3){
+	-webkit-animation-delay: .45s;
+	animation-delay: .45s;
+}
+.left p:nth-child(4){
+	-webkit-animation-delay: .55s;
+	animation-delay: .55s;
+}
+.left p:nth-child(5){
+	-webkit-animation-delay: .65s;
+	animation-delay: .65s;
+}
+
+
+
+.left p a{
+	color: #fcfcfb;
+	font-family: "Adobe 黑体 Std","微软雅黑";
+	font-size: 16px ;
+	font-weight: bold;
+}
+.f-left img{
+	width: 100%;
+}
+
+.menu-spe p:hover a{
+	color: #ffce19;
+}
+.menu-spe .current{
+	background: url(../img/sprite/pullDown2.png) no-repeat right center;
+	background-position-x: 72%;
+}
+.menu-spe .current a{
+	color:#ffce19;
+}
+/*左边部分结束*/
+
+
+/*右边开始*/
+.right {
+	height: 684px;
+	width: 80%;
+	overflow-y: scroll;
+	padding-left: 6%;
+	-webkit-animation: translateY-100 .35s .25s cubic-bezier(0, 0, 0.13, 1.37) both;
+	animation: translateY-100 .35s .25s cubic-bezier(0, 0, 0.13, 1.37) both;
+}
+/*右边--个人中心*/
+.right .f-left{
+	margin:3% 4% 0 0;
+}
+.right .f-left a{
+	display: inline-block;
+	width: 126px;
+	height: 126px;
+	border: 8px solid #eeeeee;
+	overflow: hidden;
+}
+.right .f-left p{
+	font-size: 18px;
+	color: #000;
+	font-weight: bold;
+	text-align: center;
+}
+.right .f-right {
+	width: 100%;
+	
+}
+.start{
+	margin-left: 10px;
+	height: 71px;
+	line-height: 71px;
+}
+.start ul{
+	display: inline-block;
+	vertical-align: middle;	
+}
+.item-star{
+	display: inline-block;
+	width: 23px;
+	height: 25px;
+	line-height: 25px;
+	background: url(../img/sprite/star1.png) no-repeat;
+}
+.start a{
+	display: inline-block;
+	font-size: 18px;
+	font-family: "Adobe 黑体 Std","微软雅黑";
+	color: #000;
+	padding-right: 2%;
+}
+.f-right-left{
+	width: 48%;
+	margin-right: 2%;
+}
+.spe-img1{
+	background: url(../img/sprite/icon-data.png) no-repeat;
+}
+.spe-img2{
+	background: url(../img/sprite/icon-home.png) no-repeat;
+}
+.com-form{
+	margin-bottom: 8%;
+}
+.com-form p{
+	padding-bottom: 4%;
+	padding-left: 40%;
+}
+.com-form p label{
+	position: absolute;
+	left: 15%;
+	height: 26px;
+	line-height: 26px;
+	display: block;
+	vertical-align: middle;
+	font-family: "微软雅黑";
+	font-weight: bold;
+	font-size: 12px;
+}
+.com-form p input{        /*点击事件*/
+	padding: 5px;
+	border: 1px solid #cecece;
+	background: url(../img/inputBg.png) no-repeat 0 0;
+}
+.f-right-right{
+	margin: 5% 0 0 2%;
+	width: 48%;
+}
+.f-right-right p label{
+	left: 18%;
+}
+.f-right-right p {
+	padding-left: 40%;
+	
+}
+.f-right-left .set-privacy{
+	margin-bottom: 10%;
+	cursor: pointer;
+	background: url(../img/sprite/icon-private.png) no-repeat;
+	
+}
+.set-privacy p{
+	font-size: 20px;
+	font-weight: 400;
+	padding-left: 15%;	
+}
+.set-privacy .setting-privacy-item{
+	margin: 15px 0 0 15%;
+}
+.setting-privacy-item span{
+	display: inline-block;
+	width: 65%;
+	font-size: 14px;
+	color: #222;
+}
+.setting-privacy-item .setting-privacy-switcher{
+	display:inline-block;
+	vertical-align: middle;
+	white-space: nowrap;
+}
+.setting-privacy-switcher input{
+	position: absolute;
+	left: 0;
+	top: 0;
+	opacity: 0;
+	height: 100%;
+	width: 100%;
+	z-index: 2;
+}
+.setting-privacy-switcher .be-switch{
+	background-color: #00a1d6;
+	position: relative;
+    display: inline-block;
+    width: 30px;
+    height: 16px;
+    border-radius: 8px;
+    /*margin-left: 60%;*/
+    /*background-color: #ccd0d7;*/
+    vertical-align: middle;
+    cursor: pointer;
+    -webkit-transition: background-color .2s ease;
+    -o-transition: background-color .2s ease;
+    transition: background-color .2s ease;
+	
+}
+.be-switch i{
+	left: 17px;
+	position: absolute;
+    top: 2px;
+    /*left: 2px;*/
+    width: 12px;
+    height: 12px;
+    border-radius: 12px;
+    background: #fff;
+    -webkit-transition: left .2s ease;
+    -o-transition: left .2s ease;
+    transition: left .2s ease;
+}
+.setting-privacy-switcher .be-switch-label{
+	color: #99a2aa;
+	display: inline-block;
+    line-height: 20px;
+    font-size: 14px;
+    margin-left: 3px;
+    vertical-align: middle;
+}
+.set-real-name{
+	background: url(../img/sprite/icon-name.png) no-repeat;
+}
+.set-real-name p:first-child{
+	font-size: 20px;
+	font-weight: 400;
+	padding-left: 15%;	
+}
+
+/*保存修改*/
+.save-change{
+	display: inline-block;
+	color: #fff;
+	background-color: #2b5cab;
+	padding: 5px 10px;
+	margin-left:30%;
+	margin-top: 5%;
+}
+
+/*右边--发布&&收藏*/
+.pic-box{
+	width: 150px;
+	/*height: 150px;*/
+	text-align: center;
+	margin: 0 auto;
+	margin-top: 10%;
+	padding-top: 5px;
+	transition: all 0.15s;
+}
+.pic-box:hover{
+	box-shadow: 0 0 5px #2b5cab;
+}
+.pic-box a{
+	color: #2a5caa;
+	display: inline-block;
+	width: 108px;
+	height: 108px;
+}
+.pic-box a img{
+	width: 100%;
+}
+.pic-box span{
+	color: #000;
+	font-size: 14px;
+	display: inline-block;
+}
+.pic-box span:last-child{
+ 	display: inline-block;
+ 	color: #2a5caa;
+}
+/*右边--收到的评价&&发出的评价*/
+.right-con{
+	width: 90%;
+	margin: 0 auto;
+	padding-right: 4%;
+	margin-bottom: 2%;
+	margin-top: 2%;
+}
+
+.order{
+	padding: 30px 0 32px 2%;
+	overflow: hidden;
+	transition: all .15s;
+}
+.order:hover{
+	box-shadow: 0 0 5px #2b5cab;
+	
+}
+.order .oder-number a{
+	display: inline-block;
+	width: 85px;
+	height: 85px;
+	vertical-align: middle;
+}
+.order .oder-number img{
+	width: 100%;
+}
+.order .oder-number div{
+	display: inline-block;
+	width: 80%;
+	line-height: 2em;
+	padding-left: 3%;
+	vertical-align: middle;
+}
+.order .oder-number div p span{
+	color: #000;
+	font-weight: normal;	
+	padding-left: 4%;
+}
+
+.footer{
+	margin-top: 0;
+}
+/*menu切换*/
+.right>div{
+	display: none;
+}
+.right .tab-show{
+	display: block;
+}
+/*menu切换结束*/
+
+/*右边部分结束/
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

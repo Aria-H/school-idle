@@ -1,0 +1,232 @@
+.container{
+	width: 100%;
+	height: auto;
+	font-family: "Adobe 黑体 Std";
+}
+/*左半边开始*/
+.container .left{
+	float: left;
+	width: 20%;
+	height: 723px;
+	margin: 0 auto;
+	background-color: #2a5caa;
+	padding: 65px 0 0 0;
+}
+.left .portrait{
+	width: 80%;
+	height: 163px;
+	margin: 0 auto;
+	text-align: center;
+	
+}
+.left .portrait a{
+	display: inline-block;
+	width: 126px;
+	height: 126px;
+}
+.left .portrait img{
+	border-radius: 50%;	
+	transition: all .9s ease;
+}
+.left .portrait img:hover{
+	transform:scale(1.15) rotate(360deg);
+}
+.left .portrait p{
+	font-size: 16px;
+	color: #f9f9fc;
+	text-align: center;
+	padding-top: 16px;
+}
+.left .menu{
+	width: 50%;
+	margin: 0 auto;
+	padding-top: 52px;
+	line-height: 2.3em;
+}
+.left .menu h3,.left .menu .menu-spe span{
+	display:block;
+	font-size: 19px;
+	color: #fefefe;
+	letter-spacing: 0.1em;
+}
+.left .menu p{
+	-webkit-animation: zoomIn .5s .35s cubic-bezier(0, 0, 0.13, 1.37) both;
+	animation: zoomIn .5s .35s cubic-bezier(0, 0, 0.13, 1.37) both;
+}
+.left .menu p:nth-child(2){
+	-webkit-animation: zoomIn .5s .45s cubic-bezier(0, 0, 0.13, 1.37) both;
+	animation: zoomIn .5s .45s cubic-bezier(0, 0, 0.13, 1.37) both;
+}
+.left .menu p:nth-child(3){
+	-webkit-animation: zoomIn .5s .55s cubic-bezier(0, 0, 0.13, 1.37) both;
+	animation: zoomIn .5s .55s cubic-bezier(0, 0, 0.13, 1.37) both;
+}
+.left .menu p:nth-child(4){
+	-webkit-animation: zoomIn .5s .65s cubic-bezier(0, 0, 0.13, 1.37) both;
+	animation: zoomIn .5s .65s cubic-bezier(0, 0, 0.13, 1.37) both;
+}
+
+
+.left .menu p a{
+	font-size: 14px;
+	color: #fefefe;
+}
+.left .menu p:hover a{
+	color: #ffce19;
+}
+.left .menu .current a{
+	color:#ffce19;
+}
+/*左半边结束*/
+/*右半边开始*/
+.right {
+	height: 723px;
+	overflow-y: scroll;
+}
+.right .order-message,.right .comment{
+	padding-left: 10%;
+	background-color: #fff;
+}
+.right .order-message p,.comment p{
+	font-size: 19px;
+	padding: 41px 0 0 5%;
+	-webkit-animation: zoomIn .45s .55s cubic-bezier(0, 0, 0.13, 1.37) both;
+	animation: zoomIn .45s .55s cubic-bezier(0, 0, 0.13, 1.37) both;
+}
+.right .order-message p span,.comment p span{
+	font-size: 14px;
+	color: #999a9a;
+	padding-left: 2%;
+}
+.right .right-con{
+	width: 90%;
+	margin: 0 auto;
+	padding-right: 4%;
+}
+.right-con .order:not(:last-child){
+	border-bottom: 1px solid #999;
+	padding-top: 30px;
+	padding-bottom: 12px;
+	margin-bottom: 20px;
+	overflow: hidden;
+	transition: box-shadow .35s linear;
+	
+}
+.right .order{
+	-webkit-animation: rightInto .55s .5s cubic-bezier(0, 0, 0.13, 1.37) both;
+	animation: rightInto .55s .5s cubic-bezier(0, 0, 0.13, 1.37) both;
+}
+.order2{
+	-webkit-animation-delay: .65s !important;
+	animation-delay: .65s !important;
+}
+.order3{
+	-webkit-animation-delay: .75s !important;
+	animation-delay: .75s !important;
+}
+.order4{
+	-webkit-animation-delay: .85s !important;
+	animation-delay: .85s !important;
+}
+
+
+.right-con .order:hover{
+	box-shadow:5px 5px 10px 0 rgba(18,36,77,.1);
+}
+/*时间轴动画*/
+.order .oder-number {
+	width: 100%;
+	transition: all .25s ease;
+	/*transform-style: preserve-3d;
+	transform: perspective(800px) rotateY(0deg);*/
+}
+.order .oder-number:hover{
+	/*transform:perspective(800px) scale(1.1) rotateY(45deg);*/
+}
+.order .oder-number a{
+	display: inline-block;
+	width: 85px;
+	height: 85px;
+}
+.order .oder-number div{
+	display: inline-block;
+	line-height: 1.8em;
+	padding-left: 3%;
+}
+.order .oder-number div h3{
+	font-size: 18px;
+	font-weight: normal;	
+	border-left: 3px solid #ffce19;
+	padding-left: 4%;
+}
+.order .oder-number span{
+	display: inline-block;
+	color: #000;
+	padding-left: 5%;
+}
+.order .prograss{
+	position: absolute;
+	top: 43%;
+	right: 8%;
+	font-size: 14px;
+	color: #000;
+	transition: all .25s ease-in-out;
+}
+.order .prograss:hover{
+	color: #2A5CAA;
+}
+
+.private-letter .right-con,.mention-me .right-con{
+	width: 100%;
+}
+.right-con .private-spe{
+	margin-left: 30%;
+	margin-top: 250px;	
+	-webkit-animation: bottomInto .4s cubic-bezier(0, 0, 0.29, 0.9) both;
+	-o-animation: bottomInto .4s cubic-bezier(0, 0, 0.29, 0.9) both;
+	animation: bottomInto .4s cubic-bezier(0, 0, 0.29, 0.9) both;
+	-webkit-animation-delay: .2s;
+	animation-delay: .2s;
+}
+.private-spe div:first-child{
+	width: 24%;
+}
+.private-spe div:last-child{
+	width: 76%;
+	padding-left: 5%;
+}
+.private-spe div img{
+	width: 100%;
+	-webkit-animation: translateY-100 .6s cubic-bezier(0, 0, 0.29, 0.9) both;
+	-o-animation: translateY-100 .6s cubic-bezier(0, 0, 0.29, 0.9) both;
+	animation: translateY-100 .6s cubic-bezier(0, 0, 0.29, 0.9) both;
+	-webkit-animation-delay: .2s;
+	animation-delay: .2s;
+}
+.private-spe p{
+	font-size: 20px;
+	font-weight: bold;
+	color: #4a9e12;
+}
+.private-spe p span{
+	color: #4a9e12;
+	position: relative;
+
+}
+
+/*menu切换*/
+.right>div{
+	display: none;
+}
+.right .tab-show{
+	display: block;
+}
+/*menu切换结束*/
+
+/*右半边结束*/
+
+/*脚部开始*/
+.footer{
+/*	margin-top: 723px;*/
+}
+/*脚部结束*/

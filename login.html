@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>login</title>
+		<!--框架css引入开始-->
+		
+		<!--框架css引入结束-->
+		<!--普通css文件引入开始-->
+		<link href="css/base.css" type="text/css" rel="stylesheet"/>
+		<link href="css/login.css" type="text/css" rel="stylesheet"/>
+		<!--普通css文件引入结束-->				
+		
+		<!--框架js引入开始-->
+		<script type="text/javascript" src="js/jquery-1.11.2.min.js" ></script>
+		
+		<!--框架js引入结束-->
+		<!--普通js引入开始-->	
+		<script type="text/javascript" src="js/common.js" ></script>
+		<!--普通js引入结束-->
+	</head>
+	<body>
+		<div class="header">
+			<div class="logo f-l">
+				<a href="index.html"><img src="img/login-logo.png/" alt="logo" title="点击直接进入首页"/></a>
+			</div>
+			<div class="welcome f-r">
+				<img src="img/welcome.png" alt="欢迎光临" />
+			</div>
+		</div>
+		<div class="content p-r w h">
+			<div class="login-bg"></div>
+			<div class="login-box-wrap p-a">
+				<div class="login-box p-r">
+					<div class="hd">							
+						<a href="quick-login.html"  class="login-switch"><span></span></a>	
+						<div class="login-title">								
+								<span class="current">普通登陆</span>
+								<span>手机无密码登陆</span>		
+						</div>
+					</div>
+					<div class="bd">
+						<!--标准登陆框开始-->
+						<div class="static-form tab-show">
+							<form action="">
+								<div class="username">
+									<input type="text" placeholder="用户名/邮箱/手机号"/>
+								</div>
+								<div class="pwd">
+									<input type="text" placeholder="密码"/>
+								</div>
+								<p class="forget-pwd">
+									<a href="">忘记密码</a>
+									<a href="">免费注册</a>
+								</p>
+								<div class="submit">
+									<button type="submit">登 陆</button>
+								</div>
+								<ul>
+									<li>
+										<a href=""><img src="img/l-icon-qq.png" alt="QQ登陆" /></a>
+										<a href="" class="mid"><img src="img/l-icon-wechat.png" alt="微信登陆" /></a>
+										<a href=""><img src="img/l-icon-aplipay.png" alt="支付宝登陆" /></a>
+									</li>
+								</ul>
+							</form>
+						</div>
+						<!--标准登陆框结束-->
+						
+						<!--手机无密码登陆开始-->
+						<div class="no-pwd-form">
+							<form action="">
+								<div class="username">
+									<input type="text" placeholder="手机号"/>
+								</div>
+								<div class="pwd">
+									<label for="">获取动态密码</label>
+									<input type="text" placeholder="密码"/>
+								</div>
+								<p class="forget-pwd">
+									<a href="">忘记密码</a>
+									<a href="">免费注册</a>
+								</p>
+								<div class="submit">
+									<button type="submit">登 陆</button>
+								</div>
+								<ul>
+									<li>
+										<a href=""><img src="img/l-icon-qq.png" alt="QQ登陆" /></a>
+										<a href="" class="mid"><img src="img/l-icon-wechat.png" alt="微信登陆" /></a>
+										<a href=""><img src="img/l-icon-aplipay.png" alt="支付宝登陆" /></a>
+									</li>
+								</ul>
+							</form>
+						</div>
+						<!--手机无密码登陆结束-->
+							
+						<!--快速登陆开始-->
+						<div class="quick-form">
+							<div class="qrcode-desc p-r">
+								<i></i>
+								<p>
+									<font>打开</font>
+									<a href="">手机校园闲智APP</a>
+									<span>扫一扫登陆</span>
+								</p>
+							</div>
+							<div class="qrcode">
+								<img src="img/qrCode-big.png" alt="二维码" />
+							</div>
+							<p class="click">点击下载校园闲智APP</p>
+						</div>
+						<!--快速登陆结束-->
+						
+					</div>
+						<!--bd结束-->	
+				</div>						
+				<!--login-box结束-->				
+			</div>
+			<!--login-box-wrap结束-->
+		</div>
+	</body>
+</html>

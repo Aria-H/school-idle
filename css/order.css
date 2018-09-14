@@ -1,0 +1,284 @@
+.main{
+	width: 100%;
+	height: auto;
+	font-family: "Adobe 黑体 Std";
+}
+/*左半边开始*/
+.main .left{
+	float: left;
+	width: 20%;
+	height: 723px;
+	margin: 0 auto;
+	box-shadow:5px 5px 10px 0 rgba(18,36,77,.1)
+}
+.left .portrait{
+	width: 80%;
+	margin: 0 auto;
+	text-align: center;
+	padding-top: 23px;
+	
+}
+.left .portrait a{
+	display: inline-block;
+	width: 126px;
+	height: 126px;
+	border: 8px solid #eeeeee;
+	overflow: hidden;
+}
+.left .portrait img{
+	transition: all .3s ease;
+}
+.left .portrait img:hover{
+	transform:scale(1.15);
+}
+.left .portrait p{
+	font-size: 16px;
+	color: #f9f9fc;
+	text-align: center;
+	padding-top: 16px;
+}
+.d-flex{
+	display: flex;
+	padding: 18px 0 18px 0;
+}
+
+.text-center{
+	width: 100%;
+	text-align: center;
+	border-right: 3px solid #d7d8d8;
+	color: #000;	
+	font-size: 14px;
+	font-family: "Adobe 黑体 Std","微软雅黑";
+}
+.text-center:last-child{
+	border:none
+}
+.text-center span{
+	color: #abacac;
+}
+.start{
+	margin-left: 10px;
+	padding-bottom: 5px;
+	border-bottom: 3px solid #d7d8d8;
+}
+.start ul{
+	display: inline-block;
+	vertical-align: middle;
+	padding-right: 18px;
+}
+.item-star{
+	display: inline-block;
+	width: 23px;
+	height: 25px;
+	background: url(../img/sprite/star1.png) no-repeat;
+}
+.start a{
+	display: inline-block;
+	height: 21px;
+	font-size: 14px;
+	font-family: "Adobe 黑体 Std","微软雅黑";
+	color: #000;
+	background: url(../img/sprite/thumb.png) no-repeat left center;
+	padding-left: 26px;
+}
+.left .menu{
+	width: 80%;
+	margin: 0 auto;
+	text-align: left;
+	padding-top: 12px;
+	line-height: 3em;
+}
+.left .menu p a{
+	display: inline-block;
+	width: 100%;
+	font-size: 18px;
+	color: #fefefe;
+	color: #4a9e12;
+	font-weight: bold;
+	transition: all .2s;
+	padding-left: 10px;
+}
+.left .menu p:hover{
+	background-color: #4a9e12;	
+	border-radius: 10px;
+}
+.left .menu p:hover a{
+	color: #fff;
+}
+.current{	
+	box-shadow: 2px 2px 5px rgba(18,36,77,.1);
+	border-radius: 10px;
+}
+/*左半边结束*/
+
+/*右半边开始*/
+.right {
+	height: 723px;
+	overflow-y: scroll;
+}
+.right .order-message{
+	margin: 3% 0 0 3%;
+	background-color: #fff;
+	box-shadow: 5px 5px 20px 0 rgba(18,36,77,.1);
+	
+}
+.order-message p{
+	padding: 18px 0 18px 5%;
+	
+}
+.order-message p span{
+	display: inline-block;
+	line-height: 36px;
+	font-size: 20px;
+	color: #a29d9d;
+	padding-left: 6%;
+	background: url(../img/sprite/order.png) no-repeat;
+	-webkit-animation: zoomIn .6s .45s cubic-bezier(0, 0, 0.13, 1.37) both;
+	animation: zoomIn .6s .45s cubic-bezier(0, 0, 0.13, 1.37) both;
+
+}
+.right-con{
+	width: 90%;
+	margin: 0 auto;
+	padding-right: 4%;
+	transition: box-shadow .25s ease-in-out;
+	-webkit-animation: zoomIn .5s .35s cubic-bezier(0, 0, 0.13, 1.37) both;
+	animation: zoomIn .5s .35s cubic-bezier(0, 0, 0.13, 1.37) both;
+}
+
+.order{
+	padding-top: 30px;
+	padding-bottom: 32px;
+	overflow: hidden;
+	border-bottom: 1px solid #b6b6b6;
+
+}
+.right-con:hover{
+	box-shadow: 5px 5px 10px rgba(18,36,77,.1);
+}
+.order .oder-number a{
+	display: inline-block;
+	width: 85px;
+	height: 85px;
+}
+.order .oder-number div{
+	display: inline-block;
+	line-height: 1.8em;
+	padding-left: 3%;
+}
+.order .oder-number div h3{
+	font-size: 18px;
+	font-weight: normal;	
+	border-left: 3px solid #ffce19;
+	padding-left: 4%;
+}
+.order .oder-number span{
+	display: inline-block;
+	color: #000;
+	padding-left: 5%;
+}
+.order .prograss{
+	position: absolute;
+	top: 43%;
+	right:0;
+	font-size: 14px;
+	color: #000;
+	padding: 5px 15px;
+    border: 1px solid #b5b5b5;
+    border-radius: 10px;
+}
+.order .prograss:hover{
+	background-color: rgba(42,92,170,.6);
+	color: #fff;
+}
+.panel { 
+	display: none; 
+} 
+.btn-slide { 
+	background: url(../img/sprite/pullDown.png) no-repeat right center;
+	text-align: center; 
+	width: 144px; 
+	height: 31px; 
+	line-height: 31px;
+	padding: 5px 10px 0 0; 
+	margin: 0 auto; 
+	display: block; 
+	font: bold 120%/100% "Adobe 黑体 Std","微软雅黑"; 
+	color: #b5b5b5; 
+	text-decoration: none; 
+
+}
+.bg1{
+	background: url(../img/sprite/pullDown.png) no-repeat right center;
+}
+.bg2{
+	background: url(../img/sprite/pullUp.png) no-repeat right center;
+} 
+
+.private-letter .right-con,.mention-me .right-con{
+	width: 100%;
+}
+.right-con .private-spe{
+	margin-left: 30%;
+	margin-top: 250px;	
+	-webkit-animation: bottomInto .4s cubic-bezier(0, 0, 0.29, 0.9) both;
+	-o-animation: bottomInto .4s cubic-bezier(0, 0, 0.29, 0.9) both;
+	animation: bottomInto .4s cubic-bezier(0, 0, 0.29, 0.9) both;
+	-webkit-animation-delay: .2s;
+	animation-delay: .2s;
+}
+.private-spe div:first-child{
+	width: 24%;
+}
+.private-spe div:last-child{
+	width: 76%;
+	padding-left: 5%;
+}
+.private-spe div img{
+	width: 100%;
+	-webkit-animation: translateY-100 .6s cubic-bezier(0, 0, 0.29, 0.9) both;
+	-o-animation: translateY-100 .6s cubic-bezier(0, 0, 0.29, 0.9) both;
+	animation: translateY-100 .6s cubic-bezier(0, 0, 0.29, 0.9) both;
+	-webkit-animation-delay: .2s;
+	animation-delay: .2s;
+}
+.private-spe p{
+	font-size: 20px;
+	font-weight: bold;
+	color: #4a9e12;
+}
+.private-spe p span{
+	color: #4a9e12;
+	position: relative;
+
+}
+/*menu切换*/
+.right>div{
+	display: none;
+}
+.right .tab-show{
+	display: block;
+}
+/*menu切换结束*/
+
+/*右边结束*/
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

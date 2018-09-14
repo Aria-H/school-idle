@@ -1,0 +1,117 @@
+.main{
+	width: 85%;
+	margin: 0 auto;
+	
+}
+.main legend{
+	font: bold 22px "Adobe 黑体 str" ;
+	color: #020500;
+    height: 50px;
+    margin-left: 10%;
+    padding: 10px;
+	
+}
+.main .box{
+	padding: 2%;
+}
+.box .fill-in{
+	/*background-color: palegreen;*/
+	width: 50%;
+}
+.box .fill-in>p{
+	font: bold 18px "Adobe 黑体 str" ;
+	color: #020500;
+	padding-bottom: 3%;
+}
+.fill-in .fill-con{
+	padding-left: 7%;
+}
+.fill-con .helper p,.fill-con .show-price p{
+	padding-top: 2%;
+	padding-bottom: 2%;
+	font: bold 15px "Adobe 黑体 str" ;
+	color: #020500;
+}
+.fill-con .helper p input,.fill-con .show-price p input{
+	border: none;
+	padding: 5px;
+    /*border: 1px solid #cecece;*/
+    background: url(../img/inputBg.png) no-repeat 0 
+}
+.fill-con .type>span,.clause .two-level span{
+	display: inline-block;
+	font: bold 15px "Adobe 黑体 str";
+	color: #020500;
+}
+.fill-con .type dl{
+	padding-left: 16%;
+}
+.fill-con .text-area label{
+	float: left;
+	font: bold 15px "Adobe 黑体 str" ;
+	color: #020500;
+}
+.fill-con .text-area textarea{
+	border-radius: 10px;
+}
+.fill-con .block{
+	margin-top: 5%;
+	margin-bottom: 5%;
+}
+.block .demonstration{
+	font: bold 15px "Adobe 黑体 str" ;
+	color: #020500;
+	padding-bottom: 2%;
+    display: inline-block;
+}
+/*左边结束*/
+
+.box .clause{
+	width: 50%;
+	margin: 0 auto;
+}
+.box .clause .tips p{
+	font: bold 15px "Adobe 黑体 str" ;
+	color: #020500;
+	width: 380px;
+	border: 1px solid #000;
+	border-bottom: none;
+	padding: 10px 0 10px 5px;
+}
+.clause .two-level .icon-spa{
+	background: url(../img/warning.png) no-repeat left center;
+	padding-left: 9%;
+	height: 25px;
+    line-height: 25px;
+    margin-bottom: 20px;
+    margin-top: 10px;
+}
+.clause .two-level dl{
+	padding-left: 8%;
+}
+.clause .btn{
+	text-align: right;
+	position: relative;
+	top: 240px;
+}
+.clause .btn a{
+	display: inline-block;
+	border: 2px solid #2a5caa;
+	border-radius: 5px;
+}
+.clause .btn a:first-child{
+	margin-right: 4%;
+}
+.clause .btn span{
+	font: bold 15px "Adobe 黑体 str" ;
+	color: #020500;	
+	display: inline-block;
+	width: 86px;
+	height: 38px;
+	line-height: 38px;
+    text-align: center;
+}
+
+
+
+

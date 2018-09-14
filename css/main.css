@@ -1,0 +1,391 @@
+
+
+/*更多展示*/
+.more-con{
+	margin-top: 320px;
+}
+.more{
+	width: 80%;
+	margin: 0 auto;	
+}
+.more .ul-con{
+	width: 80%;
+	margin: 0 auto;
+	top: 422px;
+}
+
+.more .ul-con li{
+	width: 25%;
+	height: 107px;
+	float: left;
+	text-align: center;	
+}
+.more .ul-con li{
+	-webkit-animation: bottomInto .5s cubic-bezier(0, 0, 0.29, 0.9) both;
+	-o-animation: bottomInto .5s cubic-bezier(0, 0, 0.29, 0.9) both;
+	animation: bottomInto .5s cubic-bezier(0, 0, 0.29, 0.9) both;
+	-webkit-animation-delay: .1s;
+	animation-delay: .1s;
+}
+.more .ul-con li a{
+	display: inline-block;
+}
+.a003-2,.a004-2,.a005-2,.a006-2{
+	transition: all .25s ease;
+}
+/*icon*/
+.ul-con ul li a .a003-2{
+	background: url(../img/003.png) no-repeat;
+	width: 56px;height: 67px;
+}
+.ul-con ul li a .a004-2{
+	background: url(../img/004.png) no-repeat;
+	width: 56px;height: 67px;
+}
+.ul-con ul li a .a005-2{
+	background: url(../img/005.png) no-repeat;
+	width: 59px;height: 67px;
+}
+.ul-con ul li a .a006-2{
+	background: url(../img/006.png) no-repeat;
+	width: 80px;height: 67px;
+}
+/*icon动画*/
+.ul-con ul li a:hover .a003-2{
+	background: url(../img/003-2.png) no-repeat;
+	width: 65px;height: 77px;
+	animation: flip 1s ease;
+}
+.ul-con ul li a:hover .a004-2{
+	background: url(../img/004-2.png) no-repeat;
+	width: 49px;height: 77px;
+	animation: flip 1s ease;
+}
+.ul-con ul li a:hover .a005-2{
+	background: url(../img/005-2.png) no-repeat;
+	width: 59px;height: 77px;
+	animation: flip 1s ease;
+}
+.ul-con ul li a:hover .a006-2{
+	background: url(../img/006-2.png) no-repeat;
+	width: 80px;height: 77px;
+	animation: flip 1s ease;
+}
+.more li span{
+	display: block;
+	margin-top: 20px;
+}
+.spe{
+	top:-212px;
+	-webkit-animation: bottomInto .3s cubic-bezier(0, 0, 0.29, 0.9) both;
+	-o-animation: bottomInto .3s cubic-bezier(0, 0, 0.29, 0.9) both;
+	animation: bottomInto .3s cubic-bezier(0, 0, 0.29, 0.9) both;
+	-webkit-animation-delay: .2s;
+	animation-delay: .2s;
+}
+.more-pic{
+	overflow: hidden;
+	-webkit-animation: translateY-100 .8s cubic-bezier(0, 0, 0.13, 1.37) both;
+	animation: translateY-100 .8s cubic-bezier(0, 0, 0.13, 1.37) both;
+	-webkit-animation-delay: .2s;
+	animation-delay: .2s;
+}
+.more-pic img{
+	width: 100%;
+	display: block;
+	transition: all .25s ease;
+}
+.more-pic img:hover{
+	transform: scale(1.1);	
+}
+.more-pic1 p{
+	height: 100px;
+	line-height: 1.5em;
+	text-indent: 2em;
+	font-size: 20px;
+	font-family:  "Adobe黑体Std";
+	letter-spacing: 0.1em;
+	padding:0 50px 0 25px;
+	color: #2b5cab;
+	text-shadow: 1px 1px 1px #2b5cab;
+}
+.more-pic1{	
+	width: 51%;
+}
+.more-pic2{
+	width: 49%;	
+}
+
+/*更多展示结束*/
+/*发布*/
+.show{
+	height: auto;
+	width: 80%;
+	margin: 0 auto;
+	padding-top: 553px;
+}
+.color-con{
+	width: 100%;
+	background-color: #2a5caa;
+	position: absolute;
+    height: 600px;
+}
+.show .option-item{
+	width: 70%;
+	margin: 0 auto;
+	overflow: hidden;
+}
+.show .option-item p{
+	text-align: center;
+	margin: 0 !important;
+	padding: 15px 0 34px 0;
+	font-size: 18px;
+	font-weight: bold;
+	color: #2b5cab;
+	
+}
+.show .option-item div{
+	text-align: center;
+	padding-bottom: 68px;
+}
+.show .option-item a{
+	display: inline-block;
+	height: 99px;
+	line-height: 99px;	
+	background-color: #009af0;
+	color: #fafafd;
+	margin-right: 7%;
+}
+/*三个按钮效果*/
+.show .option-item a:hover{
+	background-color: #4553f1;
+	box-shadow:3px 4px 10px rgba(0,0,0,.3);
+}
+.show .option-item a:active{
+	background-color: #1825a7;
+}
+.option-item-btn a:last-child {
+	margin-right:0;
+}
+.show .option-item span{
+	padding-left: 14px;
+	padding-right: 14px;
+	
+}
+.show .option-show{
+	width: 80%;
+	margin: 0 auto;
+	overflow: hidden;
+}
+.show .left{
+	width: 40%;
+}
+.show .left h3{
+	text-align: center;
+	padding-bottom: 23px;
+	padding: 20px;
+}
+.show .left p{
+	line-height: 1.5em;
+	text-indent: 2em;
+	font-size: 14px;
+	font-family:  "Adobe黑体Std";
+	color: #000103;
+	padding-bottom: 55px;
+}
+.show .left img{
+	padding-left: 65%;
+	width: 100%;
+}
+.show .right{
+	width: 50%;
+}
+.show .swiper-container{
+	width: 100%;height: 261px;
+	overflow: hidden;
+	padding-right: 5%;
+}
+.show .swiper-slide{
+	height: 100% !important;	
+}
+.show .swiper-wrapper img{
+	width: 100%;
+	
+}
+.show .swiper-pagination{
+	top: 30% !important;
+	right: 0% !important;
+}
+/*发布结束*/
+
+/*三个功能*/
+.function-con{
+	margin: 0 auto;
+}
+.function{
+	margin-top: 46px;
+	height: auto;
+}
+.function .box-title{
+	width: 80%;
+	margin: 0 auto;	
+}
+.function .box-title li{
+	display: inline-block;
+	width: 32.8%;
+	text-align: center;
+	padding-bottom: 15px;	
+}
+.function .box-title li:hover::before{
+	content: '';
+	position: absolute;
+	top: 105%;
+	width:0;
+    height:0;
+    border-width:10px;
+    border-style:solid;
+    border-color:#2a5caa transparent transparent transparent;
+}
+.function .box-title li a{
+	display: block;
+	width: 44px;height: 54px;
+	margin: 0 auto;
+	background: url(../img/mainSprites.png) no-repeat ;
+}
+.function .box-title ul li:nth-child(1) a{
+	background-position: -71px -207px;
+}
+.function .box-title ul li:nth-child(2) a{
+	background-position: -132px -207px;
+}
+.function .box-title ul li:nth-child(3) a{
+	
+	background-position: -211px -10px;
+}
+.function .box-title ul li:nth-child(1):hover a{
+	background-position: -10px -207px;
+}
+.function .box-title ul li:nth-child(2):hover a{
+	background-position: -189px -207px;
+}
+.function .box-title ul li:nth-child(3):hover a{	
+	background-position: -211px -84px;
+}
+.function .tabCon{
+	padding: 100px 0 20px 12%;
+	border-top: 5px solid #2a5caa;	
+	overflow-y: auto;
+	margin: 0 auto;
+
+}
+.function .tabCon .goods-lease{
+	width: 100%;
+}
+.function .tabCon .goods-lease>div,.function .tabCon .skill-renting>div{
+	float: left;
+	width: 50%;
+	margin-bottom: 110px;
+}
+
+.goods-lease a{
+	display: inline-block;
+	padding: 1px;
+}
+.goods-lease .img a:hover{
+	box-shadow: 0 0 8px #2b5cab;
+}
+.function .tabCon .lease-details{
+	margin-left: 15%;
+	padding-top: 10px;
+	line-height: 30px;
+}
+.tabCon .lease-details a>p{
+	color: #b7b7b7;
+}
+.tabCon .lease-details a p:last-child{
+	color: #2a5caa;
+	font-weight: bold;
+}
+.tabCon .lease-details p span{
+	display: inline-block;
+	padding-left: 25px;
+	color: #b7b7b7;
+}
+.tabCon .lease-details .dollar{
+	color: #3e3e3c;
+	font-size: 14px;
+	font-weight: bold;
+}
+.tabCon .goods-lease .calender{
+	display: inline-block;
+	padding: 70px 0 0 30px;
+	color: #b7b7b7;
+}
+.tabCon .lease-details .school{
+	width: 15px;
+	height: 28px;
+	background: url(../img/mainSprites.png) no-repeat -111px -70px;
+	vertical-align: middle;	
+}
+.get-more{
+	text-align: right;
+	color: #3e3e3c;
+	padding-right: 6%;
+	padding-bottom: 20px;
+	border-bottom: 5px solid #2a5caa;
+}
+.get-more a{
+	font-size: 14px;
+	font-weight: bold;
+}
+.get-more a:hover{
+	cursor: pointer;
+}
+.tabCon .information-sharing p{
+	color: #2b5cab;
+	font-weight: bold;
+}
+.tabCon .information-sharing p span:first-child{
+	color: #f5b201;
+	padding-left: 5%;
+	padding-right: 5%;
+}
+.tabCon .information-sharing p span:last-child{
+	color: #2b5cab;
+}
+
+
+/*tab切换*/
+/*.tabCon>div{display: block;}*/
+.tab-show{display: none;}
+
+/*三个功能结束*/
+
+
+
+
+
+
+
+
+
+
+@media (min-width: 1290px){
+	.more .ul-con{
+		top: 480px;
+	}
+	.show .option-item p{
+		padding: 80px 0 55px 0;
+	}
+}
+@media (max-width: 876px){
+	/*.header .nav{
+		width: 65%;
+	}*/
+}
+
+
+
+
+
+

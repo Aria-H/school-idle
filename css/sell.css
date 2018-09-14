@@ -1,0 +1,336 @@
+.col-md-9{
+	width: 73%;
+}
+.col-md-3{
+	width: 27%;
+}
+.content{
+	width: 87%;
+}
+
+/*上半部分开始*/
+.content>p{
+	color: #fdfdfe;
+	font-size: 20px;
+	font-family: "Adobe 黑体 Std";
+	font-weight: bold;
+	width: 386px;
+	height: 87px;
+	line-height: 87px;
+	background: url(../img/sell.png) no-repeat;
+	margin-left: -12%;
+	padding-left: 16%;
+}
+.item-info-l .main-pic{
+	width: 295px;
+	height: 266px;
+}
+.main-pic a{
+	display: inline-block;	
+}
+.main-pic a img{
+	width: 100%;
+}
+.item-info-l ul{
+	height: 60px;
+	margin: 20px 0 20px 0;
+}
+.item-info-l ul li{
+	float: left;
+	padding-right: 15px;
+}
+/*上半部分左边结束*/
+
+.content .item-info-r{
+	width: 44%;
+	margin-left: 5%;
+}
+.info-r-hd h1{
+	font: bold 14px/28px "Adobe 黑体 str";
+	color: #020100;
+}
+.info-r-hd p{
+	color:#020100 ;
+	font: bold 13px/30px "Adobe 黑体 str";
+	margin: 10px 0 10px 0;
+}
+.info-r-hd span{
+	color: #2b5cab;
+	font: bold 18px "Adobe 黑体 str" ;
+}
+.action p{
+	margin: 25px 0 25px 0;
+	
+}
+.action a{
+	margin-right: 1em ;
+	color: #999 ;
+}
+.buy-btn-con a{
+	display: inline-block;
+	width: 101px;
+	line-height: 40px;
+	background-color: #ffce18;
+	color: #eee;
+	font: bold 16px/40px "Adobe 黑体 str";
+	text-align: center;
+	margin-right: 1em;
+}
+.extra{
+	margin-top: 30px;
+}
+.extra dl{
+	overflow: hidden;	
+}
+.extra dl:first-child{
+	margin-bottom: 1em;
+}
+.extra dt{
+	float: left;
+	width: 50px;
+	height: 22px;
+	font: bold 14px/22px;
+}
+.extra dd a{
+	float: left;
+    margin-bottom: 15px;
+    margin-right: 15px;
+    height: 22px;
+    line-height: 22px;
+    color: #6C6C6C;
+}
+.extra dd img{
+	float: left;
+    margin: 2px 7px 0 0;
+}
+/*上半部分结束*/
+
+.sell-content .detail .seller-say{
+	width: 60%;
+	overflow: hidden;
+}
+.seller-say>p,.relevant-info>p{
+	width: 116px;
+	font: bold 16px/24px "Adobe 黑体 str" ;
+	color: #7b7c7d;
+	border-top: 3px solid #ffce18;
+	padding: 5px 0 20px 20px;
+}
+
+.seller-say dt,.seller-say dl{
+	float: left;
+}
+.seller-say dl{
+	width: 52%;
+}
+.seller-say .spe-dl{
+	width: 48%;
+}
+.seller-say dt{
+	margin-right: 1em;
+}
+.seller-say dd{
+	font-weight: bold;
+	line-height: 25px;
+}
+.say{
+	font: bold 15px/30px "Adobe 黑体 str";
+	color: #7B7C7D;
+}
+.say p,.pic-show p{
+	padding: 15px 0 35px 10px;	
+	font-weight: bold;
+	border-bottom: 3px solid #ffce18;
+	margin-bottom: 20px;
+}
+.say p span,.pic-show p span{
+	display: inline-block;
+	width: 116px;
+	height: 34px;
+	font: bold 16px/34px "Adobe 黑体 str";
+	text-align: center;
+	color: #fdfcfc;
+	background-color: #ffce18;
+	border-radius: 10px;
+}
+/*下半部分左边结束*/
+
+.sell-content .detail .pic-show{
+	width: 35%;
+	margin-top: 48px;
+	margin-left: 2em;
+}
+.pic-show p{
+	border-bottom: none;
+	margin-bottom: 0;
+}
+.pic-show a{
+	float: left;
+	width: 48%;
+	margin-right:4%;
+}
+.pic-show a:last-child{
+	margin-right:0;
+}
+.pic-show a img{
+	width: 100%;
+}
+/*左边结束*/
+
+/*右边开始*/
+.seller-info{
+	margin-bottom: 35px;
+}
+.seller-info>p{
+	font: bold 15px/50px "Adobe 黑体 str";
+	color: #7b7c7d;
+	padding-bottom: 40px;
+}
+.seller-info div{
+	text-align: center;
+	
+}
+.seller-info span{
+	display: inline-block;
+	font: bold 18px "Adobe 黑体 str";
+	color: #2a5caa;
+	padding-right: 0.8em;
+}
+.seller-info .info-hd{
+	display: inline-block;
+	width: 149px;
+}
+.seller-info .info-hd img{
+	width: 100%;
+	float: left;
+}
+.seller-info a{
+	display: block;
+	padding: 10px 0;
+	font: bold 14px "Adobe 黑体 str";
+	color: #7b7c7d;
+}
+.seller-info a img{
+	padding-right: 0.4em;
+}
+.seller-info label{
+	font: bold 14px "Adobe 黑体 str";
+	color: #7b7c7d;
+	padding: 7px;
+}
+/*右边上半部分结束*/
+.relevant-info .item-con a{
+	display: inline-block;
+	font: 600 14px "Adobe 黑体 str";
+	color: #2a5caa;
+	margin-bottom: 20px;
+}
+.relevant-info .item-con a:last-child{
+	margin-bottom: 0;
+}
+.item-con a img{
+	float: left;
+}
+.item-con div{
+	padding-left: 5em;
+}
+.item-con div p:last-child{
+	color: #7b7c7d;
+	font-size: 13px;
+}
+.item-con div span{
+	font-size: 13px;
+	color: #2A5CAA;
+	padding-left: 5px;
+}
+/*右边结束*/
+
+/*脚部开始*/
+.footer{
+	margin-top: 40px;
+}
+.footer p{
+	border-top: 2px solid #a5a5a6;
+	background-color: #fff;
+}
+
+/*pic*/
+/*主容器*/
+.con-FangDa{
+	width: 300px;
+	height: auto;
+	/*margin: 10px auto;*/
+	background-color:#fff;
+}
+/*正常容器*/
+.con-fangDaIMg{
+	width: 295px;
+	height: 266px;
+	position: relative;
+	background-color: #454545;
+}
+.con-fangDaIMg > img{
+	width: 100%;
+	height:100%
+}
+/*滑块*/
+.magnifyingBegin{
+	width: 150px;
+	height: 175px;
+	left: 0;
+	top: 0;
+	background-color: #454545;
+	opacity: 0.5;
+	filter:alpha(opacity=50);
+	position: absolute;
+	cursor: move;
+	display: none;
+}
+/*放大镜显示区域*/
+.magnifyingShow{
+	width: 450px;
+	height: 514px;
+	display: none;
+	position: absolute;
+	right: -470px;
+	top: 0;
+	overflow: hidden;
+	background-color: #454545;
+}
+.magnifyingShow > img{
+	width: 900px;
+	height: 1350px;
+	margin-left:0;
+	margin-top: 0;
+}
+/*设置选择图片容器*/
+.con-FangDa-ImgList{
+	margin-top:10px;
+	height:54px;
+	width:320px;
+	list-style: none;
+}
+.con-FangDa-ImgList > li{
+	margin-right:7px;
+	width: 50px;
+	height: 50px;
+	float: left;
+	cursor: pointer;
+	border: 2px solid #666;
+	background-color: #454545;
+	text-align:center;
+}
+
+.con-FangDa-ImgList > li > img{
+	vertical-align:top;
+	display:inline;
+	width:auto;
+	height:50px;
+}
+.con-FangDa-ImgList > .active{
+	border-color:#000;
+}
+
+
+
+

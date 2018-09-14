@@ -1,0 +1,302 @@
+*{box-sizing: border-box;}
+span{color: #fbfbf9;}
+body{
+	min-width: 1020px; min-height: 768px;
+	background-color: #fdfffc;
+	font-family: "Adobe黑体Std" !important;
+	}
+/*顶部功能条*/
+.top-bar-con{
+	width: 100%;
+	}
+.top-bar{
+	width: 80%;height: 97px;
+	line-height: 97px; 
+	margin: 0 auto;
+	font-size: 12px;
+	}
+.user-info .user-login-before a,.user-info .user-login-before{
+	color: #7b7c7d;
+	/*display: block;*/
+}
+	
+.user-login-before span{
+	color: #7B7C7D;
+}
+.user-info .user-login-after>em{
+	height: 17px;
+	line-height: 17px;
+	display: inline-block;
+	margin-right: 26px;
+	
+}
+.user-info .user-login-after .drop-down{
+	display: inline-block;
+	width: 11px;height: 7px;
+	padding-right: 37px;
+	background: url(../img/mainSprites.png) no-repeat -146px -74px;
+}
+.user-info .user-login-after a{
+	display: inline-block;
+	width: 68px;
+	height: 17px;
+	line-height: 17px;
+	color: #7b7c7d;
+	padding-left: 35px;
+	cursor: pointer;
+	background: url(../img/mainSprites.png) no-repeat -211px -158px;
+}
+.user-info .user-login-after a:hover{
+	
+	/*box-shadow: 3px 3px 10px rgba(59,61,112,.35);*/
+}
+.welcome{
+	color: #7b7c7d;
+}
+/*顶部功能条结束*/
+/*头部导航*/
+.header-con{
+	background-color: #2a5caa;
+}
+.header{
+	width: 80%;/* 1440*80%=1152px */
+	height: 138px;
+	margin: 0 auto;
+}
+.header .logo{
+	width: 22%;/*height: 138px;*/
+	line-height: 138px;
+	margin-right: 12%;	
+}
+.header .logo a{
+	display: inline-block;
+}
+.header .logo img{
+	width: 100%;
+	vertical-align: middle;
+}
+.header .nav{
+	height: 78px;line-height: 78px;
+	width: 65%;
+	margin-top: 28px;
+	text-align: center;
+}
+.header .nav ul{
+	text-align: center;
+	height: 78px;
+}
+.header .nav ul li{
+	padding-right:10%;
+	float: left;
+}
+.header ul a{
+	display: inline-block;
+	height: 65px;	
+	font-size: 18px;
+	color: #fbfbf9;
+	transition: all .2s ease;
+}
+.header ul .active{
+	border-bottom: 3px solid #fbfbf9;
+	font-size: 22px;
+}
+.header ul li a:hover{
+	border-bottom: 3px solid #fbfbf9;
+	font-size: 22px;
+}
+/*头部导航结束*/
+
+
+
+
+
+
+
+/*脚部*/
+.footer p{
+	width: 100%;
+	height: 95px;line-height: 95px;
+	background-color: #404040;
+	color:#afafaf;
+	padding-left: 10%;
+}
+.footer p span{
+	color: #afafaf;
+	border: 2px solid #b5b5b5;
+	padding: 2px 4px;
+	margin-right: 38%;
+}
+
+/*脚部结束*/
+
+
+
+
+
+/*关键帧动画效果*/
+@keyframes flip
+{
+    50%{
+        transform: rotateY(180deg);
+    }
+    100%{
+        transform: rotateY(360deg);
+    }
+}
+@-webkit-keyframes flip
+{
+    50%{
+        -webkit-transform: rotateY(180deg);
+    }
+    100%{
+        -webkit-transform: rotateY(360deg);
+    }
+}
+
+@keyframes bottomInto
+{
+	0%{
+		opacity: 0;
+		transform: translateY(100px);
+	}
+	100%{
+		opacity: 1;
+		transform: translateY(0);
+	}
+}
+@-webkit-keyframes bottomInto
+{
+	0%{
+		opacity: 0;
+		transform: translateY(100px);
+	}
+	100%{
+		opacity: 1;
+		transform: translateY(0);
+	}
+}
+@keyframes bottomOut
+{
+	0%{
+		opacity: 1;
+		transform: translateY(100px);
+	}
+	100%{
+		opacity: 0;
+		transform: translateY(0);
+	}
+}
+@-webkit-keyframes bottomOut
+{
+	0%{
+		opacity: 1;
+		transform: translateY(100px);
+	}
+	100%{
+		opacity: 0;
+		transform: translateY(0);
+	}
+}
+@keyframes topInto
+{
+	0%{
+		opacity: 0;
+		transform: translateY(-100px);
+	}
+	100%{
+		opacity: 1;
+		transform: translateY(0);
+	}
+}
+@-webkit-keyframes topInto
+{
+	0%{
+		opacity: 0;
+		transform: translateY(-100px);
+	}
+	100%{
+		opacity: 1;
+		transform: translateY(0);
+	}
+}
+@keyframes rightInto
+{
+	0%{
+		opacity: 0;
+		right: -100%;
+	}
+	100%{
+		opacity: 1;
+		right: 0;
+	}
+}
+@-webkit-keyframes rightInto
+{
+	0%{
+		opacity: 0;
+		right: -100%;
+	}
+	100%{
+		opacity: 1;
+		right: 0;
+	}
+}
+@-webkit-keyframes translateY-100 {
+	from{
+		opacity: 0;
+		-webkit-transform: translateY(100px);
+		transform: translateY(100px);
+	}
+ }
+@keyframes translateY-100 {
+	from{
+		opacity: 0;
+		-webkit-transform: translateY(100px);
+		transform: translateY(100px);
+	}
+}
+@-webkit-keyframes btnAnimate {
+	from{
+		opacity: 0;
+		-webkit-transform: scale(1);
+		transform: scale(1);
+	}
+	50%,70%{
+		-webkit-transform: scale(1.5);
+		transform: scale(1.05);
+	}
+	100%{
+		opacity: 1;
+		-webkit-transform: scale(1);
+		transform: scale(1);
+	}
+ }
+@keyframes btnAnimate {
+	from{
+		opacity: 0;
+		-webkit-transform: scale(1);
+		transform: scale(1);
+	}
+	50%,70%{
+		-webkit-transform: scale(1.5);
+		transform: scale(1.05);
+	}
+	100%{
+		opacity: 1;
+		-webkit-transform: scale(1);
+		transform: scale(1);
+	}
+}
+@-webkit-keyframes zoomIn {
+	from{opacity: 0;
+		-webkit-transform: scale(0);
+		transform: scale(0);
+	}
+ }
+@keyframes zoomIn {
+	from{opacity: 0;
+		-webkit-transform: scale(0);
+		transform: scale(0);
+	}
+}
+

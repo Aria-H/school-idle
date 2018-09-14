@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<!--在ie运行最新的渲染模式-->
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<title>出售</title>
+		<!--框架css引入开始-->
+		<link rel="stylesheet" href="css/bootstrap.min.css" />
+		<link rel="stylesheet" href="css/bootstrap-responsive.min.css" />
+		<link rel="stylesheet" href="https://unpkg.com/element-ui/lib/theme-chalk/index.css">
+		<!--框架css引入结束-->
+		<!--普通css文件引入开始-->
+		
+		<link rel="stylesheet" href="css/common.css" type="text/css"/>
+		<link href="css/goods-lease.css" type="text/css" rel="stylesheet"/>
+		<link href="css/base.css" type="text/css" rel="stylesheet"/>
+		<link rel="stylesheet" href="css/sell.css" type="text/css"/>
+		<!--普通css文件引入结束-->		
+		
+		<!--框架js引入开始-->
+		<script type="text/javascript" src="js/jquery-1.11.2.min.js" ></script>
+		<script type="text/javascript" src="js/bootstrap.min.js" ></script>
+		<!--<script type="text/javascript" src="js/clear-input.js" ></script>-->
+		<script src="https://unpkg.com/vue/dist/vue.js"></script>
+  		<script src="https://unpkg.com/element-ui/lib/index.js"></script>
+  		<script type="text/javascript" src="js/special.js" ></script>
+		
+		<!--框架js引入结束-->
+		<!--普通js引入开始-->
+		<script type="text/javascript" class="library" src="js/pic.js"></script>
+		<script type="text/javascript" src="js/common.js" ></script>
+		<!--普通js引入结束-->
+	</head>
+	<body>
+		<!--头部导航开始-->
+		<div class="header-con">
+			<div class="header-nav f-l p-r">
+				<span>校园闲智</span>
+				<el-input class="search-input"
+					placeholder="请输入内容"
+					v-model="input10"
+					clearable>
+				</el-input>
+			</div>
+			<div class="nav f-r">
+				<ul>
+					<li><a href="index.html">首页</a></li>
+					<li><a href="message.html">消息</a></li>
+					<li><a href="order.html" class="current">订单消息</a></li>
+					<li><a href="my.html">个人中心</a></li>
+					<li><a href="">退出</a></li>
+				</ul>
+			</div>
+		</div>
+		<!--头部导航结束-->
+		<!--中间内容开始-->
+		<div class="container">
+		    <div class="row">
+			    <div class="col-md-9 main">
+			    	<div class="content mt-0">
+			    		<p>闲置音响</p>
+			    	<div class="sell-content">			    		
+			    		<div class="summary">
+			    			<!--dh-->
+			    			<!--<div class="item-info-l f-l">
+			    				<div class="main-pic">
+			    					<a href=""><img src="img/sellPic01-2.jpg" alt="猫王收音机" /></a>
+			    				</div>
+			    				<ul>
+			    					<li>
+			    						<div><a href=""><img src="img/sellPic01.jpg" alt="猫王收音机" /></a></div>
+			    					</li>
+			    					<li>
+			    						<div><a href=""><img src="img/sellPic02.jpg" alt="猫王收音机" /></a></div>
+			    					</li>
+			    					<li>
+			    						<div><a href=""><img src="img/sellPic03.jpg" alt="猫王收音机" /></a></div>
+			    					</li>
+			    				</ul>
+			    			</div>-->
+			    			<div class="con-FangDa f-l" id="fangdajing">
+								  <div class="con-fangDaIMg">
+								  	<!-- 正常显示的图片-->
+								  	<img src="img/sellPic01-2.jpg">
+								    <!-- 滑块-->  
+								    <div class="magnifyingBegin"></div>
+								    <!-- 放大镜显示的图片 -->
+								    <div class="magnifyingShow"><img src="img/sellPic01-2.jpg"></div>
+								  </div>
+							  
+								  <ul class="con-FangDa-ImgList">
+								    <!-- 图片显示列表 -->
+								    <li class="active"><img src="img/sellPic01.jpg" data-bigimg="img/sellPic01-2.jpg"></li>
+								    <li><img src="img/sellPic02.jpg" data-bigimg="img/sellPic02-2.jpg"></li>
+								    <li><img src="img/sellPic03.jpg" data-bigimg="img/sellPic03-2.jpg"></li>
+								   
+								  </ul>
+							</div>
+
+			    			<!--dh-->
+			    			<div class="item-info-r f-l">
+			    				<div class="info-r-hd">
+			    					<h1>猫王收音机 猫王小王子奥黛丽粉便携蓝牙音箱音响 迷你 无线蓝牙 九成新 可议价 </h1>
+			    					<p>Evian 发布于 2018年5月9日</p>
+			    					<br/>
+			    					<span>￥320</span>
+			    				</div>
+			    				<div class="action">
+			    					<p>
+			    						<a href=""><img src="img/icon-collection.png" alt="收藏" />收藏</a>
+			    						<a href=""><img src="img/icon-share.png" alt="分享" />分享</a>
+			    						<a href=""><img src="img/icon-browse.png" alt="浏览" />浏览 （300）</a>
+			    					</p>
+			    				</div>
+			    				<div class="buy-btn-con">
+			    					<div class="buy-btn">
+			    						<a href="">立即购买</a>
+			    						<a href="chat.html">发送信息</a>
+			    					</div>
+			    				</div>
+			    				<div class="extra">
+			    					<dl>
+			    						<dt>信誉</dt>
+			    						<dd>xxxxxx</dd>
+			    					</dl>
+			    					<dl>
+			    						<dt>支付</dt>
+			    						<dd><a href=""><img src="img/icon-alipay.png" alt="支付宝" />支付宝</a></dd>
+			    						<dd><a href=""><img src="img/icon-wechat.png" alt="微信" />微信</a></dd>
+			    					</dl>
+			    				</div>
+			    			</div>
+			    		</div>
+			    		<div class="detail clearfix">
+			    			<div class="seller-say f-l">
+			    				<p>宝贝详情</p>
+			    				<dl class="spe-dl">
+			    					<dt>商品：</dt>
+			    					<dd>猫王收音机</dd>
+			    					<dt>颜色：</dt>
+			    					<dd>奥黛丽粉</dd>
+			    				</dl>
+			    				<dl>
+			    					<dt>型号：</dt>
+			    					<dd>便携式</dd>
+			    					<dt>购入日期：</dt>
+			    					<dd>2018年5月9日</dd>
+			    				</dl>
+			    				<div class="say f-l">
+			    					<p><span>卖家说</span></p>
+			    					5月9日在淘宝购入猫王无线收音机，颜色为奥黛丽粉， 机型小巧便携，九成新现320出售可议价。
+			    				</div>
+			    			</div>
+			    			<div class="pic-show f-l">
+			    				<p><span>图片展示</span></p>
+			    				<a href=""><img src="img/sellerPic04.jpg" alt="猫王音响" /></a>
+			    				<a href=""><img src="img/sellerPic05.jpg" alt="猫王音响" /></a>
+			    			</div>
+			    		</div>
+			    	</div>
+			    	</div>
+			    </div>
+			    <div class="col-md-3 sidebar">
+			    	<div class="seller-info">
+			    		<p>您好，欢迎来到校园闲智！</p>
+			    		<div>
+			    			<a class="info-hd"><img src="img/Evian.jpg" alt="清新头像"/></a>	
+			    			<a><span>Evian</span><img src="img/icon-follow.png" alt="关注图标" />关注</a>
+			    			<a href=""><img src="img/icon-gps.png" alt="导航图标" />宁波·宁波大学</a>
+			    			<a href=""><img src="img/icon-person.png" alt="头像图标" />详情资料</a>
+			    			<input type="checkbox" checked="checked" onclick="return false"/><label>已实名认证</label>
+			    		</div>
+			    	</div>
+			    	<div class="relevant-info">
+			    		<p>相关信息</p>
+			    		<div class="item-con">
+			    			<a href="">
+			    				<img src="img/sellerPortrait01.jpg" alt="头像" />
+			    				<div>
+			    					<p>清风<span>发布于：2018-05-16</span></p>
+			    					<p>猫王收音机便携式 迷你  复古绿 九成新 可议价......</p>
+			    				</div>
+			    			</a>
+			    			<a href="">
+			    				<img src="img/sellerPortrait02.jpg" alt="头像" />
+			    				<div>
+			    					<p>大佬<span>发布于：2018-05-18</span></p>
+			    					<p>猫王收音机便携式 迷你  纯真白 九成新 可议价 无线蓝牙......</p>
+			    				</div>
+			    			</a>
+			    			<a href="">
+			    				<img src="img/sellerPortrait03.jpg" alt="头像" />
+			    				<div>
+			    					<p>莹莹<span>发布于：2018-06-01</span></p>
+			    					<p>猫王收音机便携式 迷你  奥黛丽 粉 九成新......</p>
+			    				</div>
+			    			</a>
+			    		</div>
+			    	</div>
+			    </div> 
+		    </div>
+		</div>
+		<!--中间内容结束-->
+		
+		<!--脚部开始-->
+		<div class="footer  clearfix">
+			<p><span>校园闲置</span>Copyright © 2018 校园闲智网站 All Rights Reserved . 技术支持</p>
+		</div>
+		<!--脚部结束-->
+	</body>
+</html>

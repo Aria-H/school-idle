@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>物品租借更多</title>
+		<!--框架css引入开始-->
+		<link rel="stylesheet" href="https://unpkg.com/element-ui/lib/theme-chalk/index.css">
+		<!--框架css引入结束-->
+		
+		<!--普通css文件引入开始-->
+		<link href="css/base.css" type="text/css" rel="stylesheet"/>
+		<link rel="stylesheet" href="css/common.css" />
+		<link href="css/goods-lease.css" type="text/css" rel="stylesheet"/>
+		<link rel="stylesheet" href="css/more-goods-lease.css" />
+		<!--普通css文件引入结束-->		
+		
+		<!--框架js引入开始-->
+		<script type="text/javascript" src="js/jquery-1.11.2.min.js" ></script>
+		<script src="https://unpkg.com/vue/dist/vue.js"></script>
+  		<script src="https://unpkg.com/element-ui/lib/index.js"></script>
+  		
+		<!--框架js引入结束-->
+		<!--普通js引入开始-->
+		<script type="text/javascript" src="js/common.js" ></script>
+		<script type="text/javascript" src="js/special.js" ></script>
+		<!--普通js引入结束-->
+	</head>
+	<body>
+		<!--头部导航开始-->
+		<div class="header-con">
+			<div class="header-nav f-l p-r">
+				<span>校园闲智</span>
+				<el-input class="search-input"
+					placeholder="请输入内容"
+					v-model="input10"
+					clearable>
+				</el-input>
+			</div>
+			<div class="nav f-r">
+				<ul>
+					<li><a href="index.html">首页</a></li>
+					<li><a href="message.html">消息</a></li>
+					<li><a href="order.html" class="current">订单消息</a></li>
+					<li><a href="my.html">个人中心</a></li>
+					<li><a href="">退出</a></li>
+				</ul>
+			</div>
+		</div>
+		<!--头部导航结束-->
+		<!--banner开始-->
+		<div class="banner">
+			<img src="img/releasePic002.jpg"/>
+		</div>
+		<!--banner结束-->
+		<!--中间内容开始-->
+		<div class="content">
+			<div class="goods-menu">
+				<ul>
+					<li class="current1"><a href="" name="p01"><img src="img/Clock.png" alt="发布时间" /></a></li>
+					<li><a href="" name="p02"><img src="img/Cloud.png" alt="区域" /></a></li>
+					<li><a href="" name="p03"><img src="img/Lable.png" alt="价格" /></a></li>
+				</ul>
+			</div>
+			<div class="main-con clearfix">
+				<!--1.发布时间tab-->
+				<div class="item-content release-date  tab-show">
+					<div class="box f-l">
+						<div class="left f-l">
+							<a href=""><img src="img/goods001.jpg/" alt="音响" /></a>
+							<a>
+								<p>出租闲置<span>音响</span></p>
+								<span class="dollar">￥:300</span>
+								<p><img src="img/miniPic01.jpg" alt="音响"/> </p>
+							</a>
+						</div>
+						<div class="right f-r">
+							<a href=""><img src="img/miniPortrait04.png" alt="头像" /></a>
+							<p><span class="school"></span>杭州·浙江大学</p>
+							<span class="calender">can</span>  <!--日历-->
+						</div>
+					</div>
+					<div class="box f-l">
+						<div class="left f-l">
+							<a href=""><img src="img/goods011.jpg/" alt="吉他" /></a>
+							<a>
+								<p>出租闲置<span>吉他</span></p>
+								<span class="dollar">￥:协商后定</span>
+								<p><img src="img/miniPic04.jpg" alt="吉他"/> </p>
+							</a>
+						</div>
+						<div class="right f-r">
+							<a href=""><img src="img/miniPortrait01.jpg" alt="头像" /></a>
+							<p><span class="school"></span>杭州·温州大学</p>
+							<span class="calender">can</span>  <!--日历-->
+						</div>
+					</div>
+					<div class="box f-l">
+						<div class="left f-l">
+							<a href=""><img src="img/goods010.jpg/" alt="新概念英语" /></a>
+							<a>
+								<p>出租闲置<span>英语书</span></p>
+								<span class="dollar">￥:0</span>
+								<p><img src="img/miniPic03.png" alt="新概念英语"/> </p>
+							</a>
+						</div>
+						<div class="right f-r">
+							<a href=""><img src="img/miniPortrait05.png" alt="头像" /></a>
+							<p><span class="school"></span>杭州·浙江大学</p>
+							<span class="calender">can</span>  <!--日历-->
+						</div>
+					</div>
+		
+				</div>
+				<!--2.区域-->
+				<div class="item-content release-area">
+					<div class="box f-l">
+						<div class="left f-l">
+							<a href=""><img src="img/goods003.jpg" alt="绘图本" /></a>
+							<a>
+								<p>出租闲置<span>绘图本</span></p>
+								<span class="dollar">￥:30</span>
+								<p><img src="img/miniPic01.jpg" alt="绘图本"/> </p>
+							</a>
+						</div>
+						<div class="right f-r">
+							<a href=""><img src="img/miniPortrait02.jpg" alt="头像" /></a>
+							<p><span class="school"></span>杭州·浙江大学</p>
+							<span class="calender">can</span>  <!--日历-->
+						</div>
+					</div>
+					<div class="box f-l">
+						<div class="left f-l">
+							<a href=""><img src="img/goods004.jpg/" alt="正装" /></a>
+							<a>
+								<p>出租闲置<span>正装</span></p>
+								<span class="dollar">￥:180</span>
+								<p><img src="img/miniPic02.jpg" alt="正装"/> </p>
+							</a>
+						</div>
+						<div class="right f-r">
+							<a href=""><img src="img/miniPortrait03.jpg" alt="头像" /></a>
+							<p><span class="school"></span>杭州·浙江大学</p>
+							<span class="calender">can</span>  <!--日历-->
+						</div>
+					</div>
+
+				</div>
+				<!--3.价格-->
+				<div class="item-content release-price">
+					<div class="box f-l">
+						<div class="left f-l">
+							<a href=""><img src="img/goods012.jpg/" alt="自行车" /></a>
+							<a>
+								<p>出租闲置<span>自行车</span></p>
+								<span class="dollar">￥:协商后定</span>
+								<p><img src="img/miniPic05.jpg" alt="自行车"/> </p>
+							</a>
+						</div>
+						<div class="right f-r">
+							<a href=""><img src="img/miniPortrait01.jpg" alt="头像" /></a>
+							<p><span class="school"></span>杭州·浙江大学</p>
+							<span class="calender">can</span>  <!--日历-->
+						</div>
+					</div>
+					<div class="box f-l">
+						<div class="left f-l">
+							<a href=""><img src="img/goods013.jpg" alt="鸭舌帽" /></a>
+							<a>
+								<p>出租闲置<span>鸭舌帽</span></p>
+								<span class="dollar">￥:88</span>
+								<p><img src="img/miniPic06.jpg" alt="鸭舌帽"/> </p>
+							</a>
+						</div>
+						<div class="right f-r">
+							<a href=""><img src="img/miniPortrait03.jpg" alt="头像" /></a>
+							<p><span class="school"></span>杭州·浙江大学</p>
+							<span class="calender">can</span>  <!--日历-->
+						</div>
+					</div>
+					<div class="box f-l">
+						<div class="left f-l">
+							<a href=""><img src="img/goods014.jpg" alt="轮滑鞋" /></a>
+							<a>
+								<p>出租闲置<span>轮滑鞋</span></p>
+								<span class="dollar">￥:协商后定</span>
+								<p><img src="img/miniPic07.jpg" alt="轮滑鞋"/> </p>
+							</a>
+						</div>
+						<div class="right f-r">
+							<a href=""><img src="img/miniPortrait02.jpg" alt="头像" /></a>
+							<p><span class="school"></span>杭州·浙江大学</p>
+							<span class="calender">can</span>  <!--日历-->
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<!--中间内容结束-->
+		
+		<script type="text/javascript">
+			$(function(){				
+			
+				$(".goods-menu li").hover(function(){
+					var i = $(this).index();
+					$(this).parent().parent().siblings().children().eq(i).addClass('tab-show').siblings().removeClass('tab-show');
+					$(this).addClass('current1').siblings().removeClass('current1');	
+						
+				},function(){
+					
+				});
+			})
+	
+		</script>
+	</body>
+</html>

@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>合同详情</title>
+		<!--框架css引入开始-->
+		<link rel="stylesheet" href="https://unpkg.com/element-ui/lib/theme-chalk/index.css">
+		<!--框架css引入结束-->
+		<!--普通css文件引入开始-->
+		<link href="css/base.css" type="text/css" rel="stylesheet"/>
+		<link rel="stylesheet" href="css/common.css" />
+		<link rel="stylesheet" href="css/goods-lease.css" />
+		<link href="css/main.css" type="text/css" rel="stylesheet"/>
+		<link rel="stylesheet" href="css/contract.css" />
+		<!--普通css文件引入结束-->				
+		
+		<!--框架js引入开始-->
+		<script type="text/javascript" src="js/jquery-1.11.2.min.js" ></script>
+		<script src="https://unpkg.com/vue/dist/vue.js"></script>
+  		<script src="https://unpkg.com/element-ui/lib/index.js"></script>
+		<!--框架js引入结束-->
+		<!--普通js引入开始-->
+		<script type="text/javascript" src="js/common.js" ></script>
+		<script type="text/javascript" src="js/special.js" ></script>
+		<!--普通js引入结束-->
+	</head>
+	<body>
+		<div class="main">
+			<fieldset>
+				<legend>
+					<p>校园闲智小合同</p>
+				</legend>
+				<div class="box clearfix">
+					<div class="fill-in f-l">
+						<p>请如实填写以下表格：</p>
+						<div class="fill-con">
+							<div class="helper">
+								<p>
+									<lable>求助人：</lable>
+									<input type="text" />
+								</p>
+								<p>
+									<lable>帮助人：</lable>
+									<input type="text" />
+								</p>
+							</div>
+							<div class="type two-level">
+								<span>帮助类型：</span>
+								<dl>
+									<span>
+										<a>
+											<input type="checkbox" name="false">
+											<b></b>
+										</a>
+										<label>租赁物品</label>
+									</span>
+									<span>
+										<a>
+											<input type="checkbox" name="false">
+											<b></b>
+										</a>
+										<label>提供技能帮助</label>
+									</span>
+									<span>
+										<a>
+											<input type="checkbox" name="false">
+											<b></b>
+										</a>
+										<label>其他</label>
+									</span>
+								</dl>
+							</div>
+							<p class="text-area">
+								<label>内容：</label>
+								<textarea cols="57" rows="8" wrap="hard"></textarea>
+							</p>
+							 <div class="block">
+							    <span class="demonstration">期限：</span>
+							    <el-date-picker
+							      v-model="value7"
+							      type="daterange"
+							      align="right"
+							      unlink-panels
+							      range-separator="至"
+							      start-placeholder="开始日期"
+							      end-placeholder="结束日期"
+							      :picker-options="pickerOptions2">
+							    </el-date-picker>
+							</div>
+							<div class="show-price">
+								<p>
+									<label>出价：</label>
+									<input type="text" />
+								</p>
+								<p>
+									<label>记交易日期：</label>
+									<input type="text" />
+								</p>
+							</div>
+						</div>
+					</div>
+					<div class="clause f-r">
+						<div class="tips">
+							<p>经商议，若一方在交易期间内损害了另一方的利益，则</p>
+							<textarea name="" id="" cols="57" rows="8" wrap="hard"></textarea>
+						</div>
+						<div class="two-level">
+							<span class="icon-spa">请仔细阅读以下条款：</span>
+							<dl>
+								<span>
+									<a>
+										<input type="checkbox" name="false">
+										<b></b>
+									</a>
+									<label >我已阅读并同意以上条款</label>
+								</span>
+								<span>
+									<a>
+										<input type="checkbox" name="false">
+										<b></b>
+									</a>
+									<label >本次交易平台将会收取对方交易额的5%作为手续费</label>
+								</span>
+							</dl>
+						</div>
+						<div class="btn">
+							<a href=""><span>提交</span></a>
+							<a href="order.html"><span>退出</span></a>
+						</div>
+					</div>
+				</div>
+			</fieldset>
+		</div>
+	</body>
+</html>
